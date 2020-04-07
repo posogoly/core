@@ -4,10 +4,12 @@
 
 The definition of the word _posology_ according to [the medical dictionary](https://medical-dictionary.thefreedictionary.com/posology)
 
-po·sol·o·gy (pō-sol'ŏ-jē),
-The branch of pharmacology and therapeutics concerned with a determination of the doses of remedies; the science of dosage.
-[G. posos, how much, + logos, study]
 
+> po·sol·o·gy (pō-sol'ŏ-jē),
+The branch of pharmacology and therapeutics concerned with a determination of the doses of remedies; the science of dosage.
+
+[G. posos, how much, + logos, study]
+>
 
 ### What Posoly is about
 
