@@ -1,46 +1,74 @@
 ﻿using System.IO;
 using System.Collections.Generic;
+using CsvHelper;
+using System.Linq;
 
 namespace Posology.Core
 {
-    public class FrenchDrugDirectory : IDrugDirectory {
+    public class FrenchDrugDirectory : IDrugDirectory
+    {
 
-        private const string Path = "../../../Data/french-directory/fic_cis_cip/";
+        private readonly string _path;
 
-        public FrenchDrugDirectory(string path){
-        this._path = path;
-}
- 
-
-
-
-        
-
-    public string Search(string barCode
+        public FrenchDrugDirectory(string path)
         {
-            //todo move files into blobs in azure
-            string[] documents = System.IO.Directory.GetFiles(Path);
-            //todo stream list of medications
-
-
-
-            //todo search the given barcode
-            //todo return details
-            return $"Found {documents.Length} in folder";
+            _path = path;
         }
 
-        private IEnumerable<T> GetFields<T>(string filepath)
+        public string Search(string barCode)
         {
-            var medications = new List<string>();
-            foreach (string row in File.ReadLines(filepath))
+            //todo move files into blobs in azure
+            string[] documents = Directory.GetFiles(_path);
+
+            //todo stream list of medications
+            var listOfContents = new List<List<string>>();
+            var drugs = new List<IDrug>();
+            foreach (string file in documents)
             {
-                foreach (string field in row.Split(','))
+                if (file.EndsWith("CIS.txt"))
                 {
-                    List<string> items = new List<string>();
-                    medications.Add(field);
+                    drugs = GetDataFromFile(file);
                 }
             }
-            return (IEnumerable<T>)medications;
+
+            //todo search the given barcode
+            var searchedDrug = drugs.Where(drug => drug.InternalIdentifier == barCode).FirstOrDefault();
+            
+            //todo return details
+            return $"Found {searchedDrug.Denomination} in french drug directory";
+        }
+
+        private List<IDrug> GetDataFromFile(string filePath)
+        {
+            var items = new List<IDrug>();
+            foreach (string row in File.ReadLines(filePath))
+            {
+
+                var drugDetails = row.Split('\t');
+
+                var drug = new FrenchDrug
+                {
+                    InternalIdentifier = drugDetails[0],
+                    Denomination = drugDetails[1],
+                    DrugType = drugDetails[2],
+                    AutorisationStatus = drugDetails[4],
+                    AdministrationType = drugDetails[3],
+                    UnkownNumber = drugDetails[7]
+                };
+
+                items.Add(drug);
+            }
+            return items;
+        }
+
+        private IEnumerable<T> ParseDataFromFile<T>(string filePath)
+        {
+            TextReader reader = File.OpenText(filePath);
+            CsvReader csvFile = new CsvReader((IParser)reader);
+            csvFile.Configuration.HasHeaderRecord = true;
+            csvFile.Read();
+            var records = csvFile.GetRecords<T>();
+            return records;
         }
     }
 }
