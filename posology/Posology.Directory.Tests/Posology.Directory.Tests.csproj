@@ -13,4 +13,18 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Posology.Directory\Posology.Directory.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\french-directory\fic_cis_cip\CIS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\french-directory\fic_cis_cip\CIS_CIP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\french-directory\fic_cis_cip\COMPO.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
