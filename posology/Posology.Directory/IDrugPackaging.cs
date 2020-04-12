@@ -4,7 +4,7 @@ namespace Posology.Core
 {
     public interface IDrugPackaging
     {
-        IDrug Drug { get; }
+        IDrug Drug { get; set; }
         string Description { get; set; }
         string Id { get; set; }
         string Status { get; set; }

@@ -9,9 +9,9 @@ namespace Posology.Directory.Tests
         {
             const string path = "../../../Data/french-directory/fic_cis_cip/";
             var directory = new Core.FrenchDrugDirectory(path);
-            var result = directory.Search("68269975");
+            var result = directory.Search("3400935887559");
 
-            Assert.Equal("Found 3 in folder", result);
+            Assert.Equal("Found drug package with barcode 3400935887559", result);
         }
     }
 }

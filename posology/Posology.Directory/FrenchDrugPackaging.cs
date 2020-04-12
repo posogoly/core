@@ -4,10 +4,10 @@ namespace Posology.Core
 {
     public class FrenchDrugPackaging: IDrugPackaging
     {
-        public FrenchDrugPackaging(IDrug drug)
+        public FrenchDrugPackaging(string internalIdentifier)
         {
-            Drug = drug;
-            InternalDrugIdentifier = drug.InternalIdentifier;
+            InternalDrugIdentifier = internalIdentifier;
+            Components = new List<IDrugComponent>();
         }
 
         public string InternalDrugIdentifier { get; }
@@ -17,7 +17,7 @@ namespace Posology.Core
         public string CommercialisationStatus { get; set; }
         public string CommercialisationDate { get; set; }
         public string Barcode { get; set; }
-        public IDrug Drug { get; }
+        public IDrug Drug { get; set; }
         public List<IDrugComponent> Components { get; }
     }
 }

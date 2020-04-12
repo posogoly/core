@@ -26,20 +26,43 @@ namespace Posology.Core
             var drugInfoWithBarcodes = documents.Where(file => file.EndsWith("CIS_CIP.txt")).FirstOrDefault();
             var drugCompositions = documents.Where(file => file.EndsWith("COMPO.txt")).FirstOrDefault();
 
-            var drugs = GetDataFromHeaderFile(drugHeaderDetails);
-            var drugPackages = AddDataFromPackageInfoFile(drugInfoWithBarcodes, drugs);
-            AddDataFromDrugCompositionFile(drugInfoWithBarcodes, drugPackages);
+            //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
-            //todo search the given barcode
-            var searchedDrug = drugPackages.Where(drug => drug.Barcode == barCode).FirstOrDefault();
+            var drugPackage = GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
+            AddDataFromDrugFile(drugCompositions, drugPackage);
+            AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
+
+            //todo add found package to cache
 
             //todo return details
-            return $"Found {searchedDrug.Description} in french drug directory";
+            var mainComponent = drugPackage.Components.FirstOrDefault();
+            return $"Found drug package with barcode {drugPackage.Barcode} with main component {mainComponent?.Denomination}";
         }
 
-        private List<IDrug> GetDataFromHeaderFile(string filePath)
+        private IDrugPackaging GetDataFromPackageInfoFile(string filePath, string barCode)
         {
-            var items = new List<IDrug>();
+            var items = new List<IDrugPackaging>();
+            var row = File.ReadLines(filePath).Where(line => line.Contains(barCode)).FirstOrDefault();
+            if (row != null)
+            {
+                var drugDetails = row.Split('\t');
+
+                var package = new FrenchDrugPackaging(drugDetails[0])
+                {
+                    Id = drugDetails[1],
+                    Description = drugDetails[2],
+                    Status = drugDetails[3],
+                    CommercialisationStatus = drugDetails[4],
+                    CommercialisationDate = drugDetails[5],
+                    Barcode = drugDetails[6]
+                };
+                return package; 
+            }
+            throw new KeyNotFoundException();
+        }
+
+        private void AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
+        {
             foreach (string row in File.ReadLines(filePath))
             {
 
@@ -54,47 +77,19 @@ namespace Posology.Core
                     AdministrationType = drugDetails[3],
                     UnkownNumber = drugDetails[7]
                 };
-
-                items.Add(drug);
-            }
-            return items;
-        }
-
-        private List<IDrugPackaging> AddDataFromPackageInfoFile(string filePath, List<IDrug> drugs)
-        {
-            var items = new List<IDrugPackaging>();
-            foreach (string row in File.ReadLines(filePath))
-            {
-
-                var drugDetails = row.Split('\t');
-                var drugInfo = drugs.Where(drug => drug.InternalIdentifier == drugDetails[0]).FirstOrDefault();
-                if (drugInfo != null)
+                if (drugPackage.InternalDrugIdentifier == drug.InternalIdentifier)
                 {
-                    var package = new FrenchDrugPackaging(drugInfo)
-                    {
-                        Id = drugDetails[1],
-                        Description = drugDetails[2],
-                        Status = drugDetails[3],
-                        CommercialisationStatus = drugDetails[4],
-                        CommercialisationDate = drugDetails[5],
-                        Barcode = drugDetails[6]
-                    };
-
-                    items.Add(package);
+                    drugPackage.Drug = drug;
+                    return;
                 }
-
-                
             }
-            return items;
         }
 
-        private void AddDataFromDrugCompositionFile(string filePath, List<IDrugPackaging> packages)
+        private void AddDataFromDrugCompositionFile(string filePath, IDrugPackaging package)
         {
-            foreach (string row in File.ReadLines(filePath))
+            foreach (string row in File.ReadLines(filePath).Where(line => line.Contains(package.InternalDrugIdentifier)))
             {
-
                 var drugDetails = row.Split('\t');
-                var packageInfo = packages.Where(package => package.InternalDrugIdentifier == drugDetails[0]).FirstOrDefault();
 
                 var component = new FrenchDrugComponent(drugDetails[0])
                 {
@@ -106,9 +101,9 @@ namespace Posology.Core
                     ComponentType = drugDetails[6],
                 };
 
-                packageInfo.Components.Add(component);
-
+                package.Components.Add(component);
             }
         }
+
     }
 }
