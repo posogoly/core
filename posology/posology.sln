@@ -1,8 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "posology-catalog", "posology-catalog\posology-catalog.csproj", "{C7ECA0EC-1C4D-4701-A67C-5DE7EE29F3E3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Posology.Directory", "Posology.Directory\Posology.Directory.csproj", "{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Posology.Directory.Tests", "Posology.Directory.Tests\Posology.Directory.Tests.csproj", "{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C7ECA0EC-1C4D-4701-A67C-5DE7EE29F3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7ECA0EC-1C4D-4701-A67C-5DE7EE29F3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7ECA0EC-1C4D-4701-A67C-5DE7EE29F3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7ECA0EC-1C4D-4701-A67C-5DE7EE29F3E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
