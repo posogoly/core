@@ -20,31 +20,36 @@ namespace Posology.Core
         {
             //todo move files into blobs in azure
 
-            var docs = await FileHelper.AsyncGetFiles(_path);
+            //var docs = await FileHelper.AsyncGetFiles(_path);
             //todo stream list of medications
             var listOfContents = new List<List<string>>();
-
+            /*
             var drugHeaderDetails = docs.Where(file => file.EndsWith("CIS.txt")).FirstOrDefault();
             var drugInfoWithBarcodes = docs.Where(file => file.EndsWith("CIS_CIP.txt")).FirstOrDefault();
             var drugCompositions = docs.Where(file => file.EndsWith("COMPO.txt")).FirstOrDefault();
+            */
+            var drugHeaderDetails = "CIS.txt";
+            var drugInfoWithBarcodes = "CIS_CIP.txt";
+            var drugCompositions = "COMPO.txt";
+
 
             //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
             var drugPackage = await GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
-            await AddDataFromDrugFile(drugCompositions, drugPackage);
+            await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
             await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
             //todo add found package to cache
 
             //todo return details handling special characters
             var mainComponent = drugPackage.Components.FirstOrDefault();
-            return $"Found drug package with barcode {drugPackage.Barcode} with main component {mainComponent?.ComponentName}";
+            return $"Found drug package with barcode {drugPackage.Barcode} with name {drugPackage.Drug.Denomination} and main component {mainComponent?.ComponentName}";
         }
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
             var items = new List<IDrugPackaging>();
-            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
             var row = fileContent.Where(line => line.Contains(barCode)).FirstOrDefault();
             if (row != null)
             {
@@ -66,7 +71,7 @@ namespace Posology.Core
 
         private async Task AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
         {
-            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
             var row = fileContent.Where(line => line.Contains(drugPackage.InternalDrugIdentifier)).FirstOrDefault();
             if (row != null)
             {
@@ -87,7 +92,7 @@ namespace Posology.Core
 
         private async Task AddDataFromDrugCompositionFile(string filePath, IDrugPackaging package)
         {
-            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
 
             foreach (string row in fileContent.Where(line => line.Contains(package.InternalDrugIdentifier)))
             {

@@ -10,8 +10,10 @@ namespace Posology.Directory.Tests
             const string path = "../../../Data/french-directory/fic_cis_cip/";
             var directory = new Core.FrenchDrugDirectory(path);
             var result = await directory.Search("3400935887559");
+            var expectedResult = "Found drug package with barcode 3400935887559 with name SERESTA 10 mg, comprim� and main component OXAZ�PAM";
 
-            Assert.Equal("Found drug package with barcode 3400935887559 with main component OXAZ�PAM", result);
+            Assert.Equal(expectedResult, result);
+
         }
     }
 }
