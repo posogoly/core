@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Text;
 
 namespace Posology.Core
 {
@@ -14,7 +16,7 @@ namespace Posology.Core
             _path = path;
         }
 
-        public string Search(string barCode)
+        public async Task<string> Search(string barCode)
         {
             //todo move files into blobs in azure
             var documents = Directory.GetFiles(_path).ToList();
@@ -28,7 +30,7 @@ namespace Posology.Core
 
             //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
-            var drugPackage = GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
+            var drugPackage = await GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
             AddDataFromDrugFile(drugCompositions, drugPackage);
             AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
@@ -39,10 +41,11 @@ namespace Posology.Core
             return $"Found drug package with barcode {drugPackage.Barcode} with main component {mainComponent?.ComponentName}";
         }
 
-        private IDrugPackaging GetDataFromPackageInfoFile(string filePath, string barCode)
+        private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
             var items = new List<IDrugPackaging>();
-            var row = File.ReadLines(filePath).Where(line => line.Contains(barCode)).FirstOrDefault();
+            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF7);
+            var row = fileContent.Where(line => line.Contains(barCode)).FirstOrDefault();
             if (row != null)
             {
                 var drugDetails = row.Split('\t');

@@ -1,7 +1,9 @@
-﻿namespace Posology.Core
+﻿using System.Threading.Tasks;
+
+namespace Posology.Core
 {
     public interface IDrugDirectory
     {
-        string Search(string barCode);
+        Task<string> Search(string barCode);
     }
 }
