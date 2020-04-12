@@ -31,8 +31,8 @@ namespace Posology.Core
             //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
             var drugPackage = await GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
-            AddDataFromDrugFile(drugCompositions, drugPackage);
-            AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
+            await AddDataFromDrugFile(drugCompositions, drugPackage);
+            await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
             //todo add found package to cache
 
@@ -44,7 +44,7 @@ namespace Posology.Core
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
             var items = new List<IDrugPackaging>();
-            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF7);
+            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
             var row = fileContent.Where(line => line.Contains(barCode)).FirstOrDefault();
             if (row != null)
             {
@@ -59,16 +59,17 @@ namespace Posology.Core
                     CommercialisationDate = drugDetails[5],
                     Barcode = drugDetails[6]
                 };
-                return package; 
+                return package;
             }
             throw new KeyNotFoundException();
         }
 
-        private void AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
+        private async Task AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
         {
-            foreach (string row in File.ReadLines(filePath))
+            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
+            var row = fileContent.Where(line => line.Contains(drugPackage.InternalDrugIdentifier)).FirstOrDefault();
+            if (row != null)
             {
-
                 var drugDetails = row.Split('\t');
 
                 var drug = new FrenchDrug
@@ -80,17 +81,15 @@ namespace Posology.Core
                     AdministrationType = drugDetails[3],
                     UnkownNumber = drugDetails[7]
                 };
-                if (drugPackage.InternalDrugIdentifier == drug.InternalIdentifier)
-                {
-                    drugPackage.Drug = drug;
-                    return;
-                }
+                drugPackage.Drug = drug;
             }
         }
 
-        private void AddDataFromDrugCompositionFile(string filePath, IDrugPackaging package)
+        private async Task AddDataFromDrugCompositionFile(string filePath, IDrugPackaging package)
         {
-            foreach (string row in File.ReadLines(filePath).Where(line => line.Contains(package.InternalDrugIdentifier)))
+            var fileContent = await FileHelper.ReadAllLinesAsync(filePath, Encoding.UTF8);
+
+            foreach (string row in fileContent.Where(line => line.Contains(package.InternalDrugIdentifier)))
             {
                 var drugDetails = row.Split('\t');
 
