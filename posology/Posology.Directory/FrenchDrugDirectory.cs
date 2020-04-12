@@ -34,9 +34,9 @@ namespace Posology.Core
 
             //todo add found package to cache
 
-            //todo return details
+            //todo return details handling special characters
             var mainComponent = drugPackage.Components.FirstOrDefault();
-            return $"Found drug package with barcode {drugPackage.Barcode} with main component {mainComponent?.Denomination}";
+            return $"Found drug package with barcode {drugPackage.Barcode} with main component {mainComponent?.ComponentName}";
         }
 
         private IDrugPackaging GetDataFromPackageInfoFile(string filePath, string barCode)

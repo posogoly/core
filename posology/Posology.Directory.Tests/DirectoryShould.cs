@@ -11,7 +11,7 @@ namespace Posology.Directory.Tests
             var directory = new Core.FrenchDrugDirectory(path);
             var result = directory.Search("3400935887559");
 
-            Assert.Equal("Found drug package with barcode 3400935887559", result);
+            Assert.Equal("Found drug package with barcode 3400935887559 with main component OXAZ�PAM", result);
         }
     }
 }
