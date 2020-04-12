@@ -10,6 +10,12 @@ namespace Posology.Core
         private const int DefaultBufferSize = 4096;
         private const FileOptions DefaultOptions = FileOptions.Asynchronous | FileOptions.SequentialScan;
 
+        public static async Task<IEnumerable<string>> AsyncGetFiles(string directory)
+        {
+            return Directory.GetFiles(directory);
+        }
+
+
         public static async Task<string[]> ReadAllLinesAsync(string path, Encoding encoding)
         {
             var lines = new List<string>();

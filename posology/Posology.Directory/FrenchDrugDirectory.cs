@@ -19,14 +19,14 @@ namespace Posology.Core
         public async Task<string> Search(string barCode)
         {
             //todo move files into blobs in azure
-            var documents = Directory.GetFiles(_path).ToList();
 
+            var docs = await FileHelper.AsyncGetFiles(_path);
             //todo stream list of medications
             var listOfContents = new List<List<string>>();
 
-            var drugHeaderDetails = documents.Where(file => file.EndsWith("CIS.txt")).FirstOrDefault();
-            var drugInfoWithBarcodes = documents.Where(file => file.EndsWith("CIS_CIP.txt")).FirstOrDefault();
-            var drugCompositions = documents.Where(file => file.EndsWith("COMPO.txt")).FirstOrDefault();
+            var drugHeaderDetails = docs.Where(file => file.EndsWith("CIS.txt")).FirstOrDefault();
+            var drugInfoWithBarcodes = docs.Where(file => file.EndsWith("CIS_CIP.txt")).FirstOrDefault();
+            var drugCompositions = docs.Where(file => file.EndsWith("COMPO.txt")).FirstOrDefault();
 
             //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
