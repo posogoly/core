@@ -1,6 +1,6 @@
 ﻿namespace Posology.Core
 {
-    public class FrenchDrug: IDrug
+    public class FrenchDrug : IDrug
     {
         public string InternalIdentifier { get; set; }
         public string Denomination { get; set; }
@@ -12,7 +12,7 @@
         public string AdministrationType { get; set; }
         public string PrescriptionDetails { get; set; }
         public string PackagingDetails { get; set; }
-        public string DrugType { get; internal set; }
-        public string UnkownNumber { get; internal set; }
+        public string DrugType { get; set; }
+        public string UnkownNumber { get; set; }
     }
 }
