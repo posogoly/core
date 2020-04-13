@@ -8,11 +8,12 @@ namespace Posology.Core
 {
     public class FrenchDrugDirectory : IDrugDirectory
     {
-
+        private readonly string _rootDirectory;
         private readonly string _path;
 
-        public FrenchDrugDirectory(string path)
+        public FrenchDrugDirectory(string rootDirectory, string path)
         {
+            _rootDirectory = rootDirectory;
             //todo inject FileHelper in constructor
             _path = path;
         }
@@ -48,7 +49,7 @@ namespace Posology.Core
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
             var items = new List<IDrugPackaging>();
-            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
             var row = fileContent.Where(line => line.Contains(barCode)).FirstOrDefault();
             if (row != null)
             {
@@ -70,7 +71,7 @@ namespace Posology.Core
 
         private async Task AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
         {
-            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
             var row = fileContent.Where(line => line.Contains(drugPackage.InternalDrugIdentifier)).FirstOrDefault();
             if (row != null)
             {
@@ -91,7 +92,7 @@ namespace Posology.Core
 
         private async Task AddDataFromDrugCompositionFile(string filePath, IDrugPackaging package)
         {
-            var fileContent = await FileHelper.ReadAllLinesAsync(_path, filePath, Encoding.UTF8);
+            var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
 
             foreach (string row in fileContent.Where(line => line.Contains(package.InternalDrugIdentifier)))
             {

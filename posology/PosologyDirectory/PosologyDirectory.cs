@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
@@ -8,12 +7,14 @@ using Posology.Core;
 using System.Net.Http;
 using System.Net;
 using System.Text;
+using System.IO;
+using System.Reflection;
 
 namespace PosologyDirectory
 {
     public static class PosologyDirectory
     {
-        [FunctionName("PosologyDirectory")]
+        [FunctionName("Directory")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "directory/barcode/{countryCode}/{code}")] HttpRequest req, string code,
             ILogger log)
@@ -22,7 +23,11 @@ namespace PosologyDirectory
 
             const string path = "./Data/french-directory/fic_cis_cip/";
             //todo use strategy pattern to determine which directory to use depending on country code
-            var directory = new FrenchDrugDirectory(path);
+
+            var baseDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            var rootDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
+
+            var directory = new FrenchDrugDirectory(rootDirectory, path);
 
             //string barCode = "3400935887559";
             var result = await directory.Search(code);

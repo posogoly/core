@@ -3,6 +3,7 @@ using Posology.Core;
 using Xunit;
 using Newtonsoft.Json;
 using System.Linq;
+using System;
 
 namespace Posology.Directory.Tests
 {
@@ -12,7 +13,9 @@ namespace Posology.Directory.Tests
         public async void ReadAllFilesInFrenchDataFolder()
         {
             const string path = "../../../Data/french-directory/fic_cis_cip/";
-            var directory = new FrenchDrugDirectory(path);
+            var rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            var directory = new FrenchDrugDirectory(rootDirectory, path);
             var barcode = "3400935887559";
 
             var result = await directory.Search(barcode);
