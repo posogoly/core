@@ -19,15 +19,12 @@ namespace Posology.Directory.Tests
 
             Assert.Contains(barcode, result);
 
-            //var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result);
             JsonSerializerSettings settings = new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Auto,
                 NullValueHandling = NullValueHandling.Ignore,
             };
             FrenchDrugPackaging actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
-
-            //todo compare resut and expected object
 
             var filePath = Path.Combine(path, "expected-drugpackage.json");
             var fileContent = File.ReadAllText(filePath);

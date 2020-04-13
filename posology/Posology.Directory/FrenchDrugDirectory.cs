@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using Newtonsoft.Json;
-using System.IO;
 
 namespace Posology.Core
 {
@@ -14,12 +13,13 @@ namespace Posology.Core
 
         public FrenchDrugDirectory(string path)
         {
+            //todo inject FileHelper in constructor
             _path = path;
         }
 
         public async Task<string> Search(string barCode)
         {
-            //todo move files into blobs in azure
+            //todo move files into blobs in azure?
             var drugHeaderDetails = "CIS.txt";
             var drugInfoWithBarcodes = "CIS_CIP.txt";
             var drugCompositions = "COMPO.txt";
@@ -30,8 +30,7 @@ namespace Posology.Core
 
             //todo add found package to cache
 
-            //todo return json of drugPackage object handling special characters
-            //var mainComponent = drugPackage.Components.FirstOrDefault();
+            //todo handling special characters (in UI?)
             JsonSerializer serializer = new JsonSerializer();
             serializer.Converters.Add(new Newtonsoft.Json.Converters.JavaScriptDateTimeConverter());
             serializer.NullValueHandling = NullValueHandling.Ignore;
@@ -43,7 +42,7 @@ namespace Posology.Core
                 TypeNameHandling = TypeNameHandling.Objects,
                 NullValueHandling = NullValueHandling.Ignore,
             });
-            //return $"Found drug package with barcode {drugPackage.Barcode} with name {drugPackage.Drug.Denomination} and main component {mainComponent?.ComponentName}";
+            
         }
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
