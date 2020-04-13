@@ -2,7 +2,7 @@
 {
     public interface IDrugComponent
     {
-        string InternalDrugIdentifier { get; }
+        string InternalDrugIdentifier { get; set; }
         string DrugShape { get; set; }
         string ComponentId { get; set; }
         string ComponentName { get; set; }

@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Posology.Core
 {
@@ -18,21 +20,9 @@ namespace Posology.Core
         public async Task<string> Search(string barCode)
         {
             //todo move files into blobs in azure
-
-            //var docs = await FileHelper.AsyncGetFiles(_path);
-            //todo stream list of medications
-            var listOfContents = new List<List<string>>();
-            /*
-            var drugHeaderDetails = docs.Where(file => file.EndsWith("CIS.txt")).FirstOrDefault();
-            var drugInfoWithBarcodes = docs.Where(file => file.EndsWith("CIS_CIP.txt")).FirstOrDefault();
-            var drugCompositions = docs.Where(file => file.EndsWith("COMPO.txt")).FirstOrDefault();
-            */
             var drugHeaderDetails = "CIS.txt";
             var drugInfoWithBarcodes = "CIS_CIP.txt";
             var drugCompositions = "COMPO.txt";
-
-
-            //var drugs = GetDataFromHeaderFile(drugHeaderDetails);
 
             var drugPackage = await GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
             await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
@@ -40,9 +30,20 @@ namespace Posology.Core
 
             //todo add found package to cache
 
-            //todo return details handling special characters
-            var mainComponent = drugPackage.Components.FirstOrDefault();
-            return $"Found drug package with barcode {drugPackage.Barcode} with name {drugPackage.Drug.Denomination} and main component {mainComponent?.ComponentName}";
+            //todo return json of drugPackage object handling special characters
+            //var mainComponent = drugPackage.Components.FirstOrDefault();
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.Converters.Add(new Newtonsoft.Json.Converters.JavaScriptDateTimeConverter());
+            serializer.NullValueHandling = NullValueHandling.Ignore;
+            serializer.TypeNameHandling = TypeNameHandling.Auto;
+            serializer.Formatting = Formatting.Indented;
+                                           
+            return JsonConvert.SerializeObject(drugPackage, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Objects,
+                NullValueHandling = NullValueHandling.Ignore,
+            });
+            //return $"Found drug package with barcode {drugPackage.Barcode} with name {drugPackage.Drug.Denomination} and main component {mainComponent?.ComponentName}";
         }
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
@@ -107,7 +108,7 @@ namespace Posology.Core
                     ComponentType = drugDetails[6],
                 };
 
-                package.Components.Add(component);
+                package.AddComponent(component);
             }
         }
 

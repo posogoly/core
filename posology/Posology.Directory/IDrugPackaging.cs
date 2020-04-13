@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Posology.Core
+﻿namespace Posology.Core
 {
     public interface IDrugPackaging
     {
@@ -11,7 +9,10 @@ namespace Posology.Core
         string CommercialisationStatus { get; set; }
         string CommercialisationDate { get; set; }
         string Barcode { get; set; }
-        string InternalDrugIdentifier { get; }
-        List<IDrugComponent> Components { get; }
+        string InternalDrugIdentifier { get; set; }
+        IDrugComponents Components { get; set; }
+
+        void AddComponent(IDrugComponent component);
+        IDrugComponent GetMainComponent();
     }
 }
