@@ -3,11 +3,10 @@ using Posology.Core;
 using Xunit;
 using Newtonsoft.Json;
 using System;
-using System.Linq;
 
 namespace Posology.Directory.Tests
 {
-    public class FrenchDirectoryShould : DirectoryShould
+    public class UnitedStatesDirectoryShould : DirectoryShould
     {
         const string PATH = "../../../Data/french-directory/fic_cis_cip/";
 
@@ -20,7 +19,7 @@ namespace Posology.Directory.Tests
 
             var rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            var directory = new FrenchDrugDirectory(rootDirectory, PATH);
+            var directory = new UnitedStatesDrugDirectory(rootDirectory, PATH);
 
             var result = await directory.Search(barcode);
 
@@ -39,10 +38,7 @@ namespace Posology.Directory.Tests
 
             VerifyPackageData(actual, expectedResult);
             VerifyDrugData(actual.Drug, expectedResult.Drug);
-            Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
-            var firstExpectedComponent = expectedResult.GetMainComponent();
-            var firstActualComponent = actual.GetMainComponent();
-            VerifyComponentData(firstActualComponent, firstExpectedComponent);
+            //VerifyComponentData(actual, expectedResult);
 
         }
 

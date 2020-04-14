@@ -7,11 +7,9 @@ namespace Posology.Directory.Tests
     public class DirectoryShould
     {
 
-        internal static void VerifyComponentData(IDrugPackaging actual, IDrugPackaging expectedResult)
+        internal static void VerifyComponentData(IDrugComponent firstActualComponent, IDrugComponent firstExpectedComponent)
         {
-            Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
-            var firstExpectedComponent = expectedResult.GetMainComponent();
-            var firstActualComponent = actual.GetMainComponent();
+            
             Assert.Equal(firstExpectedComponent.ComponentName, firstActualComponent.ComponentName);
             Assert.Equal(firstExpectedComponent.ComponentId, firstActualComponent.ComponentId);
             Assert.Equal(firstExpectedComponent.ComponentAmount, firstActualComponent.ComponentAmount);
@@ -20,14 +18,14 @@ namespace Posology.Directory.Tests
             Assert.Equal(firstExpectedComponent.DrugShape, firstActualComponent.DrugShape);
         }
 
-        internal static void VerifyDrugData(IDrugPackaging actual, IDrugPackaging expectedResult)
+        internal static void VerifyDrugData(IDrug actual, IDrug expectedResult)
         {
-            Assert.Equal(expectedResult.Drug.Denomination, actual.Drug.Denomination);
-            Assert.Equal(expectedResult.Drug.AdministrationType, actual.Drug.AdministrationType);
-            Assert.Equal(expectedResult.Drug.AutorisationStatus, actual.Drug.AutorisationStatus);
-            Assert.Equal(expectedResult.Drug.DrugType, actual.Drug.DrugType);
-            Assert.Equal(expectedResult.Drug.UnkownNumber, actual.Drug.UnkownNumber);
-            Assert.Equal(expectedResult.Drug.InternalIdentifier, actual.Drug.InternalIdentifier);
+            Assert.Equal(expectedResult.Denomination, actual.Denomination);
+            Assert.Equal(expectedResult.AdministrationType, actual.AdministrationType);
+            Assert.Equal(expectedResult.AutorisationStatus, actual.AutorisationStatus);
+            Assert.Equal(expectedResult.DrugType, actual.DrugType);
+            Assert.Equal(expectedResult.UnkownNumber, actual.UnkownNumber);
+            Assert.Equal(expectedResult.InternalIdentifier, actual.InternalIdentifier);
         }
 
         internal static void VerifyPackageData(IDrugPackaging actual, IDrugPackaging expectedResult)
