@@ -1,49 +1,13 @@
-using System.IO;
 using Posology.Core;
 using Xunit;
-using Newtonsoft.Json;
 using System.Linq;
-using System;
 
 namespace Posology.Directory.Tests
 {
     public class DirectoryShould
     {
-        const string PATH = "../../../Data/french-directory/fic_cis_cip/";
 
-        [Theory]
-        [InlineData("3400935887559", "expected-result-3400935887559.json")]
-        [InlineData("3400930065686", "expected-result-3400930065686.json")]
-        [InlineData("3400931923077", "expected-result-3400931923077.json")]
-        public async void ReadAllFilesInFrenchDataFolder(string barcode, string expectedResultFile)
-        {
-
-            var rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            var directory = new FrenchDrugDirectory(rootDirectory, PATH);
-
-            var result = await directory.Search(barcode);
-
-            Assert.Contains(barcode, result);
-
-            JsonSerializerSettings settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Auto,
-                NullValueHandling = NullValueHandling.Ignore,
-            };
-            FrenchDrugPackaging actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
-
-            var filePath = Path.Combine(PATH, expectedResultFile);
-            var fileContent = File.ReadAllText(filePath);
-            var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
-
-            VerifyPackageData(actual, expectedResult);
-            VerifyDrugData(actual, expectedResult);
-            VerifyComponentData(actual, expectedResult);
-
-        }
-
-        private static void VerifyComponentData(FrenchDrugPackaging actual, FrenchDrugPackaging expectedResult)
+        internal static void VerifyComponentData(IDrugPackaging actual, IDrugPackaging expectedResult)
         {
             Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
             var firstExpectedComponent = expectedResult.GetMainComponent();
@@ -56,7 +20,7 @@ namespace Posology.Directory.Tests
             Assert.Equal(firstExpectedComponent.DrugShape, firstActualComponent.DrugShape);
         }
 
-        private static void VerifyDrugData(FrenchDrugPackaging actual, FrenchDrugPackaging expectedResult)
+        internal static void VerifyDrugData(IDrugPackaging actual, IDrugPackaging expectedResult)
         {
             Assert.Equal(expectedResult.Drug.Denomination, actual.Drug.Denomination);
             Assert.Equal(expectedResult.Drug.AdministrationType, actual.Drug.AdministrationType);
@@ -66,7 +30,7 @@ namespace Posology.Directory.Tests
             Assert.Equal(expectedResult.Drug.InternalIdentifier, actual.Drug.InternalIdentifier);
         }
 
-        private static void VerifyPackageData(FrenchDrugPackaging actual, FrenchDrugPackaging expectedResult)
+        internal static void VerifyPackageData(IDrugPackaging actual, IDrugPackaging expectedResult)
         {
             Assert.Equal(expectedResult.Barcode, actual.Barcode);
             Assert.Equal(expectedResult.Description, actual.Description);
