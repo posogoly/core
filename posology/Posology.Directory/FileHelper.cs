@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,8 +14,6 @@ namespace Posology.Core
         {
             var lines = new List<string>();
 
-            // Open the FileStream with the same FileMode, FileAccess
-            // and FileShare as a call to File.OpenText would've done.
             var filePath = Path.Combine(rootDirectory, directory, filename);
             using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, DefaultBufferSize, DefaultOptions))
             using (var reader = new StreamReader(stream, encoding))
