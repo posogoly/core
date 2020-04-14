@@ -10,6 +10,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Medication\French\" />
+    <Folder Include="Medication\UnitedStates\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\french-directory\fic_cis_cip\CIS.txt" />
