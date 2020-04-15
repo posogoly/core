@@ -28,7 +28,7 @@ namespace Posology.Directory.Tests
             Assert.Equal(expectedResult.InternalIdentifier, actual.InternalIdentifier);
         }
 
-        internal static void VerifyPackageData(IDrugPackaging actual, IDrugPackaging expectedResult)
+        internal static void VerifyPackage(IDrugPackaging actual, IDrugPackaging expectedResult)
         {
             Assert.Equal(expectedResult.Barcode, actual.Barcode);
             Assert.Equal(expectedResult.Description, actual.Description);

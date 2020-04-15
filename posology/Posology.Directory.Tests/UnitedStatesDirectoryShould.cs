@@ -4,12 +4,17 @@ using Xunit;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
+using Posology.Directory.Medication.French;
 
 namespace Posology.Directory.Tests
 {
     public class UnitedStatesDirectoryShould : DirectoryShould
     {
-        const string PATH = "../../../Data/french-directory/fic_cis_cip/";
+        private const string Path = "../../../Data/french-directory/fic_cis_cip/";
+
+        public UnitedStatesDirectoryShould()
+        {
+        }
 
         [Theory]
         [InlineData("3400935887559", "expected-result-3400935887559.json")]
@@ -20,24 +25,24 @@ namespace Posology.Directory.Tests
 
             var rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            var directory = new UnitedStatesDrugDirectory(rootDirectory, PATH);
+            var directory = new UnitedStatesDrugDirectory(rootDirectory, Path);
 
             var result = await directory.Search(barcode);
 
             Assert.Contains(barcode, result);
 
-            JsonSerializerSettings settings = new JsonSerializerSettings
+            var settings = new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Auto,
                 NullValueHandling = NullValueHandling.Ignore,
             };
-            FrenchDrugPackaging actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
+            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
 
-            var filePath = Path.Combine(PATH, expectedResultFile);
+            var filePath = System.IO.Path.Combine(Path, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);
             var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
 
-            VerifyPackageData(actual, expectedResult);
+            VerifyPackage(actual, expectedResult);
             VerifyDrugData(actual.Drug, expectedResult.Drug);
             Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
             var firstExpectedComponent = expectedResult.GetMainComponent();

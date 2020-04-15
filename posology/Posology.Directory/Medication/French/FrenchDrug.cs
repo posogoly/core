@@ -1,4 +1,6 @@
-﻿namespace Posology.Core
+﻿using Posology.Core;
+
+namespace Posology.Directory.Medication.French
 {
     public class FrenchDrug : IDrug
     {

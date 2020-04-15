@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Posology.Core;
 
-namespace Posology.Core
+namespace Posology.Directory.Medication.French
 {
     public class FrenchDrugComponents : IDrugComponents
     {

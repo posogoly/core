@@ -1,6 +1,7 @@
 ﻿using System.Linq;
+using Posology.Core;
 
-namespace Posology.Core
+namespace Posology.Directory.Medication.French
 {
     public class FrenchDrugPackaging: IDrugPackaging
     {

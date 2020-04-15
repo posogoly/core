@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using Newtonsoft.Json;
+using Posology.Directory.Medication.French;
 
 namespace Posology.Core
 {

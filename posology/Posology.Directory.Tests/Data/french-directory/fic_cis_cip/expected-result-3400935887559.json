@@ -1,5 +1,5 @@
 ﻿{
-  "$type": "Posology.Core.FrenchDrugPackaging, Posology.Directory",
+  "$type": "Posology.Directory.Medication.French.FrenchDrugPackaging, Posology.Directory",
   "InternalDrugIdentifier": "68269975",
   "Description": "plaquette(s) thermoform�e(s) PVC-Aluminium de 30 comprim�(s)",
   "Id": "3588755",
@@ -9,7 +9,7 @@
   "Barcode": "3400935887559",
   "Components": [
     {
-      "$type": "Posology.Core.FrenchDrugComponent, Posology.Directory",
+      "$type": "Posology.Directory.Medication.French..FrenchDrugComponent, Posology.Directory",
       "InternalDrugIdentifier": "68269975",
       "DrugShape": "comprim�",
       "ComponentId": "02533",
@@ -20,7 +20,7 @@
     }
   ],
   "Drug": {
-    "$type": "Posology.Core.FrenchDrug, Posology.Directory",
+    "$type": "Posology.Directory.Medication.French.FrenchDrug, Posology.Directory",
     "InternalIdentifier": "68269975",
     "Denomination": "SERESTA 10 mg, comprim�",
     "AutorisationStatus": "Autorisation active",

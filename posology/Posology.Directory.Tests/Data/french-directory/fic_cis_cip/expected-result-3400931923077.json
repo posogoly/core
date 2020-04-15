@@ -1,5 +1,5 @@
 ﻿{
-  "$type": "Posology.Core.FrenchDrugPackaging, Posology.Directory",
+  "$type": "Posology.Directory.Medication.French.FrenchDrugPackaging, Posology.Directory",
   "InternalDrugIdentifier": "69584073",
   "Description": "30 sachet(s) papier kraft aluminium poly\ufffdthyl\ufffdne de 3,76 g",
   "Id": "3192307",
@@ -9,7 +9,7 @@
   "Barcode": "3400931923077",
   "Components": [
     {
-      "$type": "Posology.Core.FrenchDrugComponent, Posology.Directory",
+      "$type": "Posology.Directory.Medication.French.FrenchDrugComponent, Posology.Directory",
       "InternalDrugIdentifier": "69584073",
       "DrugShape": "poudre",
       "ComponentId": "09414",
@@ -20,7 +20,7 @@
     }
   ],
   "Drug": {
-    "$type": "Posology.Core.FrenchDrug, Posology.Directory",
+    "$type": "Posology.Directory.Medication.French.FrenchDrug, Posology.Directory",
     "InternalIdentifier": "69584073",
     "Denomination": "SMECTA 3 g ORANGE-VANILLE, poudre pour suspension buvable en sachet",
     "AutorisationStatus": "Autorisation active",

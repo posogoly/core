@@ -16,7 +16,7 @@ namespace PosologyDirectory
     {
         [FunctionName("Directory")]
         public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "directory/barcode/{countryCode}/{code}")] HttpRequest req, string code,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "{countryCode}/directory/barcode/{code}")] HttpRequest req, string code,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -29,7 +29,8 @@ namespace PosologyDirectory
 
             var directory = new FrenchDrugDirectory(rootDirectory, path);
 
-            //string barCode = "3400935887559";
+            //todo remive this string barCode = "3400935887559";
+            //todo add to readme why the url is like that
             var result = await directory.Search(code);
 
             return new HttpResponseMessage(HttpStatusCode.OK)
