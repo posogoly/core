@@ -15,6 +15,6 @@ namespace Posology.Directory.Medication.French
         public string PrescriptionDetails { get; set; }
         public string PackagingDetails { get; set; }
         public string DrugType { get; set; }
-        public string UnkownNumber { get; set; }
+        public string NoticeDocumentId { get; set; }
     }
 }

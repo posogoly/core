@@ -85,7 +85,7 @@ namespace Posology.Core
                     DrugType = drugDetails[2],
                     AutorisationStatus = drugDetails[4],
                     AdministrationType = drugDetails[3],
-                    UnkownNumber = drugDetails[7]
+                    NoticeDocumentId = drugDetails[7]
                 };
                 drugPackage.Drug = drug;
             }

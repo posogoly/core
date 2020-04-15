@@ -24,7 +24,7 @@ namespace Posology.Directory.Tests
             Assert.Equal(expectedResult.AdministrationType, actual.AdministrationType);
             Assert.Equal(expectedResult.AutorisationStatus, actual.AutorisationStatus);
             Assert.Equal(expectedResult.DrugType, actual.DrugType);
-            Assert.Equal(expectedResult.UnkownNumber, actual.UnkownNumber);
+            Assert.Equal(expectedResult.NoticeDocumentId, actual.NoticeDocumentId);
             Assert.Equal(expectedResult.InternalIdentifier, actual.InternalIdentifier);
         }
 

@@ -44,7 +44,7 @@ namespace Posology.Directory.Tests
             };
 
             //todo refactor in narrative of scenario ATDD
-            FrenchDrugPackaging actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
+            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
 
             var filePath = Path.Combine(PATH, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);
