@@ -9,7 +9,7 @@
   "Barcode": "3400935887559",
   "Components": [
     {
-      "$type": "Posology.Directory.Medication.French..FrenchDrugComponent, Posology.Directory",
+      "$type": "Posology.Directory.Medication.French.FrenchDrugComponent, Posology.Directory",
       "InternalDrugIdentifier": "68269975",
       "DrugShape": "comprim�",
       "ComponentId": "02533",
