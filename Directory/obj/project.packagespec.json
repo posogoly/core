@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj",
-    "projectName": "Posology.Directory",
-    "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj",
-    "outputPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/",
+    "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj",
+    "projectName": "Directory",
+    "projectPath": "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj",
+    "outputPath": "/Users/halimakoundi/Documents/Github/core/Directory/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

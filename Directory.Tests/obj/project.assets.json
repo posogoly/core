@@ -1620,7 +1620,7 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "Posology.Directory/1.0.0": {
+      "Directory/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1628,10 +1628,10 @@
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
-          "bin/placeholder/Posology.Directory.dll": {}
+          "bin/placeholder/Directory.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Posology.Directory.dll": {}
+          "bin/placeholder/Directory.dll": {}
         }
       }
     }
@@ -2410,6 +2410,7 @@
       "type": "package",
       "path": "microsoft.win32.registry/4.0.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net46/Microsoft.Win32.Registry.dll",
@@ -2803,6 +2804,7 @@
       "type": "package",
       "path": "system.collections.immutable/1.2.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
@@ -2818,6 +2820,7 @@
       "type": "package",
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2855,6 +2858,7 @@
       "type": "package",
       "path": "system.collections.specialized/4.0.1",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2892,6 +2896,7 @@
       "type": "package",
       "path": "system.componentmodel/4.0.1",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2949,6 +2954,7 @@
       "type": "package",
       "path": "system.componentmodel.eventbasedasync/4.0.11",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3017,6 +3023,7 @@
       "type": "package",
       "path": "system.componentmodel.primitives/4.1.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3054,6 +3061,7 @@
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.1.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3173,6 +3181,7 @@
       "type": "package",
       "path": "system.diagnostics.process/4.1.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3228,6 +3237,7 @@
       "type": "package",
       "path": "system.diagnostics.textwritertracelistener/4.0.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3265,6 +3275,7 @@
       "type": "package",
       "path": "system.diagnostics.tracesource/4.0.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4210,6 +4221,7 @@
       "type": "package",
       "path": "system.reflection.metadata/1.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.1/System.Reflection.Metadata.dll",
@@ -4728,6 +4740,7 @@
       "type": "package",
       "path": "system.runtime.loader/4.0.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net462/_._",
@@ -5277,6 +5290,7 @@
       "type": "package",
       "path": "system.threading.thread/4.0.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5315,6 +5329,7 @@
       "type": "package",
       "path": "system.threading.threadpool/4.0.10",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5533,6 +5548,7 @@
       "type": "package",
       "path": "system.xml.xpath/4.0.1",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5570,6 +5586,7 @@
       "type": "package",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5729,17 +5746,17 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Posology.Directory/1.0.0": {
+    "Directory/1.0.0": {
       "type": "project",
-      "path": "../Posology.Directory/Posology.Directory.csproj",
-      "msbuildProject": "../Posology.Directory/Posology.Directory.csproj"
+      "path": "../Directory/Directory.csproj",
+      "msbuildProject": "../Directory/Directory.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Directory >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Posology.Directory >= 1.0.0",
       "xunit >= 2.3.1",
       "xunit.runner.visualstudio >= 2.3.1"
     ]
@@ -5751,11 +5768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
-      "projectName": "Posology.Directory.Tests",
-      "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
+      "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/Directory.Tests.csproj",
+      "projectName": "Directory.Tests",
+      "projectPath": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/Directory.Tests.csproj",
       "packagesPath": "/Users/halimakoundi/.nuget/packages/",
-      "outputPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/obj/",
+      "outputPath": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5772,8 +5789,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj": {
-              "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj"
+            "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj": {
+              "projectPath": "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj"
             }
           }
         }

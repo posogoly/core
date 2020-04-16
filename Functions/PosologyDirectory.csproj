@@ -263,7 +263,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Posology.Directory\Posology.Directory.csproj">
+    <ProjectReference Include="..\Directory\Directory.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
-    "projectName": "Posology.Directory.Tests",
-    "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
-    "outputPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/obj/",
+    "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/Directory.Tests.csproj",
+    "projectName": "Directory.Tests",
+    "projectPath": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/Directory.Tests.csproj",
+    "outputPath": "/Users/halimakoundi/Documents/Github/core/Directory.Tests/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj": {
-            "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj"
+          "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj": {
+            "projectPath": "/Users/halimakoundi/Documents/Github/core/Directory/Directory.csproj"
           }
         }
       }
