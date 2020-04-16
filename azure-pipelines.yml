@@ -27,8 +27,16 @@ steps:
     command: build
     projects: '**/*.csproj'
     arguments: '--configuration Release'
-    
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
     projects: '**/*Tests*.csproj'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)/Functions'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
