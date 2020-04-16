@@ -12,7 +12,7 @@ pool:
 steps:
 - task: VSBuild@1
   inputs:
-    solution: '**\*.sln'
+    solution: '*.sln'
     clean: true
 
 - task: VSTest@2
