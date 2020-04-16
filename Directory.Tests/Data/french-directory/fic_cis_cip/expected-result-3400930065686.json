@@ -1,5 +1,5 @@
 ﻿{
-  "$type": "Posology.Directory.Medication.French.FrenchDrugPackaging, Posology.Directory",
+  "$type": "Directory.Medication.French.FrenchDrugPackaging, Directory",
   "InternalDrugIdentifier": "65143010",
   "Description": "plaquette(s) PVC aluminium de 90 comprim\ufffd(s)",
   "Id": "",
@@ -9,7 +9,7 @@
   "Barcode": "3400930065686",
   "Components": [
     {
-      "$type": "Posology.Directory.Medication.French.FrenchDrugComponent, Posology.Directory",
+      "$type": "Directory.Medication.French.FrenchDrugComponent, Directory",
       "InternalDrugIdentifier": "65143010",
       "DrugShape": "comprim\ufffd",
       "ComponentId": "00382",
@@ -20,7 +20,7 @@
     }
   ],
   "Drug": {
-    "$type": "Posology.Directory.Medication.French.FrenchDrug, Posology.Directory",
+    "$type": "Directory.Medication.French.FrenchDrug, Directory",
     "InternalIdentifier": "65143010",
     "Denomination": "LEVOTHYROX 50 microgrammes, comprim\ufffd s\ufffdcable",
     "AutorisationStatus": "Autorisation active",

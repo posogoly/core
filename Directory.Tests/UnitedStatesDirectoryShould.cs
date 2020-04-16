@@ -4,7 +4,7 @@ using Xunit;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
-using Posology.Directory.Medication.French;
+using Directory.Medication.French;
 
 namespace Posology.Directory.Tests
 {

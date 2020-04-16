@@ -2,64 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c97ec3-f3b5-48e6-81e5-2a06866bc326" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/Posology.Directory.Tests.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Data/french-directory/fic_cis_cip/CIS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Data/french-directory/fic_cis_cip/CIS_CIP.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Data/french-directory/fic_cis_cip/COMPO.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.Tests.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.Tests.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.Tests.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.Tests.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.Tests.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/Posology.Directory.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Data/french-directory/fic_cis_cip/CIS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Data/french-directory/fic_cis_cip/CIS_CIP.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Data/french-directory/fic_cis_cip/COMPO.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.Tests.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.Tests.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.Tests.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.Tests.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.Tests.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/Posology.Directory.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/bin/Release/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Posology.Directory.Tests.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Posology.Directory.Tests.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Posology.Directory.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Posology.Directory.Tests.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Posology.Directory.Tests.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Release/netcoreapp2.1/Posology.Directory.Tests.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/PosologyDirectory.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/PosologyDirectory.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posology.sln" beforeDir="false" afterPath="$PROJECT_DIR$/posology.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/obj/Debug/netcoreapp2.1/Directory.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/bin/Debug/netstandard2.0/Directory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/bin/Debug/netstandard2.0/Directory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/bin/Debug/netstandard2.0/Directory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/bin/Debug/netstandard2.0/Directory.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Directory/obj/Debug/netstandard2.0/Directory.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,26 +33,29 @@
     <session id="1456883602">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="1" />
+          <entry key="cs" value="6" />
+          <entry key="json" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="1" />
+          <entry key="C#" value="6" />
+          <entry key="JSON" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -106,13 +71,151 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+              <folding>
+                <marker date="1587052539266" expanded="false" signature="6:141" ph="..." />
+                <marker date="1587052539266" expanded="true" signature="177:2452" ph="{...}" />
+                <marker date="1587052539266" expanded="true" signature="236:2450" ph="{...}" />
+                <marker date="1587052539266" expanded="true" signature="395:704" ph="{...}" />
+                <marker date="1587052539266" expanded="true" signature="1059:2443" ph="{...}" />
+                <marker date="1587052539266" expanded="true" signature="1355:1490" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding>
+                <marker date="1587052539276" expanded="true" signature="6:65" ph="..." />
+                <marker date="1587052539276" expanded="true" signature="104:1320" ph="{...}" />
+                <marker date="1587052539276" expanded="true" signature="142:1318" ph="{...}" />
+                <marker date="1587052539276" expanded="true" signature="227:301" ph="{...}" />
+                <marker date="1587052539276" expanded="true" signature="1111:1192" ph="{...}" />
+                <marker date="1587052539276" expanded="true" signature="1242:1312" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding>
+                <marker date="1587052539263" expanded="true" signature="59:677" ph="{...}" />
+                <marker date="1587052539263" expanded="true" signature="113:675" ph="{...}" />
+                <marker date="1587052539263" expanded="true" signature="226:307" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding>
+                <marker date="1587052539273" expanded="true" signature="6:80" ph="..." />
+                <marker date="1587052539273" expanded="true" signature="119:1357" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="177:1355" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="221:300" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="514:582" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="631:699" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="750:831" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="860:913" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="964:1052" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="1120:1214" ph="{...}" />
+                <marker date="1587052539273" expanded="true" signature="1263:1349" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <marker date="1587052539269" expanded="true" signature="6:65" ph="..." />
+                <marker date="1587052539269" expanded="true" signature="104:1369" ph="{...}" />
+                <marker date="1587052539269" expanded="true" signature="159:1367" ph="{...}" />
+                <marker date="1587052539269" expanded="true" signature="288:353" ph="{...}" />
+                <marker date="1587052539269" expanded="true" signature="415:547" ph="{...}" />
+                <marker date="1587052539269" expanded="true" signature="1161:1242" ph="{...}" />
+                <marker date="1587052539269" expanded="true" signature="1292:1361" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Posology.</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json" />
+        <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json" />
+        <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -130,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -138,11 +240,35 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Directory" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Directory" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Medication" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Directory" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Medication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="French" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Directory.Tests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,11 +301,13 @@
       <workItem from="1587045660693" duration="90000" />
       <workItem from="1587045808024" duration="205000" />
       <workItem from="1587046167891" duration="13000" />
+      <workItem from="1587046209482" duration="631000" />
+      <workItem from="1587052311900" duration="252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308000" />
+    <option name="totallyTimeSpent" value="1191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,15 +320,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25106382" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -208,9 +335,10 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.3929078" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -233,8 +361,55 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="48">
+            <startOffsets>
+              <option value="1659" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1723" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="37">
+            <startOffsets>
+              <option value="1223" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1268" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="46">
+            <startOffsets>
+              <option value="1563" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1645" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="RiderUnitTests">
+        <watch expression="result" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs">
@@ -247,6 +422,105 @@
             <marker date="1586941695995" expanded="true" signature="649:1542" ph="{...}" />
             <marker date="1586941695995" expanded="true" signature="1187:1297" ph="/* todo remive this string barCode = &quot;3400935887559&quot;; ... */" />
             <marker date="1586941695995" expanded="true" signature="1428:1530" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <marker date="1587052539266" expanded="false" signature="6:141" ph="..." />
+            <marker date="1587052539266" expanded="true" signature="177:2452" ph="{...}" />
+            <marker date="1587052539266" expanded="true" signature="236:2450" ph="{...}" />
+            <marker date="1587052539266" expanded="true" signature="395:704" ph="{...}" />
+            <marker date="1587052539266" expanded="true" signature="1059:2443" ph="{...}" />
+            <marker date="1587052539266" expanded="true" signature="1355:1490" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1587052539276" expanded="true" signature="6:65" ph="..." />
+            <marker date="1587052539276" expanded="true" signature="104:1320" ph="{...}" />
+            <marker date="1587052539276" expanded="true" signature="142:1318" ph="{...}" />
+            <marker date="1587052539276" expanded="true" signature="227:301" ph="{...}" />
+            <marker date="1587052539276" expanded="true" signature="1111:1192" ph="{...}" />
+            <marker date="1587052539276" expanded="true" signature="1242:1312" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <marker date="1587052539263" expanded="true" signature="59:677" ph="{...}" />
+            <marker date="1587052539263" expanded="true" signature="113:675" ph="{...}" />
+            <marker date="1587052539263" expanded="true" signature="226:307" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <marker date="1587052539273" expanded="true" signature="6:80" ph="..." />
+            <marker date="1587052539273" expanded="true" signature="119:1357" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="177:1355" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="221:300" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="514:582" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="631:699" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="750:831" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="860:913" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="964:1052" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="1120:1214" ph="{...}" />
+            <marker date="1587052539273" expanded="true" signature="1263:1349" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <marker date="1587052539269" expanded="true" signature="6:65" ph="..." />
+            <marker date="1587052539269" expanded="true" signature="104:1369" ph="{...}" />
+            <marker date="1587052539269" expanded="true" signature="159:1367" ph="{...}" />
+            <marker date="1587052539269" expanded="true" signature="288:353" ph="{...}" />
+            <marker date="1587052539269" expanded="true" signature="415:547" ph="{...}" />
+            <marker date="1587052539269" expanded="true" signature="1161:1242" ph="{...}" />
+            <marker date="1587052539269" expanded="true" signature="1292:1361" ph="{...}" />
           </folding>
         </state>
       </provider>

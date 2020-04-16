@@ -1,6 +1,6 @@
 ﻿using Posology.Core;
 
-namespace Posology.Directory.Medication.French
+namespace Directory.Medication.French
 {
     public class FrenchDrugComponent:IDrugComponent
     {
