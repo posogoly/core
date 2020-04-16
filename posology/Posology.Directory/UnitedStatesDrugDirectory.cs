@@ -108,8 +108,9 @@ namespace Posology.Core
                     ComponentAmountUnit = drugDetails[5],
                     ComponentType = drugDetails[6],
                 };
-
+                //todo remove line 112 once refactoring complete
                 package.AddComponent(component);
+                package.Drug.AddComponent(component);
             }
         }
 

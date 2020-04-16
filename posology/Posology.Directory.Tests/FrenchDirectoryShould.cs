@@ -10,14 +10,14 @@ namespace Posology.Directory.Tests
 {
     public class FrenchDirectoryShould : DirectoryShould
     {
-        const string PATH = "../../../Data/french-directory/fic_cis_cip/";
+        private const string Path = "../../../Data/french-directory/fic_cis_cip/";
 
         [Fact]
         public async void Return_DrugPackageBarcode()
         {
             var barcode = "3400931923077";
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
-            var directory = new FrenchDrugDirectory(rootFolder, PATH);
+            var directory = new FrenchDrugDirectory(rootFolder, Path);
 
             var result = await directory.Search(barcode);
 
@@ -33,7 +33,7 @@ namespace Posology.Directory.Tests
         {
 
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
-            var directory = new FrenchDrugDirectory(rootFolder, PATH);
+            var directory = new FrenchDrugDirectory(rootFolder, Path);
 
             var result = await directory.Search(barcode);
 
@@ -46,7 +46,7 @@ namespace Posology.Directory.Tests
             //todo refactor in narrative of scenario ATDD
             var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
 
-            var filePath = Path.Combine(PATH, expectedResultFile);
+            var filePath = System.IO.Path.Combine(Path, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);
             var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
 

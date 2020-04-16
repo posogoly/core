@@ -1,4 +1,6 @@
-﻿namespace Posology.Core
+﻿using Posology.Directory;
+
+namespace Posology.Core
 {
     public interface IDrugPackaging
     {

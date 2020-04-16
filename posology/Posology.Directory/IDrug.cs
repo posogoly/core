@@ -1,4 +1,6 @@
-﻿namespace Posology.Core
+﻿using Posology.Core;
+
+namespace Posology.Directory
 {
     public interface IDrug
     {
@@ -9,5 +11,9 @@
         string AdministrationType { get; set; }
         string NoticeDocumentId { get; set; }
         string DrugType { get; set; }
+        IDrugComponents Components { get; set; }
+
+        void AddComponent(IDrugComponent component);
+        IDrugComponent GetMainComponent();
     }
 }
