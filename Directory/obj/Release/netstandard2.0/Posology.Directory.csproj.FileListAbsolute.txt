@@ -1,0 +1,11 @@
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Data/french-directory/fic_cis_cip/CIS.txt
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Data/french-directory/fic_cis_cip/CIS_CIP.txt
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Data/french-directory/fic_cis_cip/COMPO.txt
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Posology.Directory.deps.json
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Posology.Directory.dll
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/bin/Release/netstandard2.0/Posology.Directory.pdb
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/Release/netstandard2.0/Posology.Directory.csproj.CoreCompileInputs.cache
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/Release/netstandard2.0/Posology.Directory.AssemblyInfoInputs.cache
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/Release/netstandard2.0/Posology.Directory.AssemblyInfo.cs
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/Release/netstandard2.0/Posology.Directory.dll
+/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/Release/netstandard2.0/Posology.Directory.pdb

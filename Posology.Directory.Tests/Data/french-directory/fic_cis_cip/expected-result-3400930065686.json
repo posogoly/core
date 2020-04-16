@@ -1,0 +1,31 @@
+﻿{
+  "$type": "Posology.Directory.Medication.French.FrenchDrugPackaging, Posology.Directory",
+  "InternalDrugIdentifier": "65143010",
+  "Description": "plaquette(s) PVC aluminium de 90 comprim\ufffd(s)",
+  "Id": "",
+  "Status": "Pr\ufffdsentation active",
+  "CommercialisationStatus": "D\ufffdclaration de commercialisation",
+  "CommercialisationDate": "22/05/2017",
+  "Barcode": "3400930065686",
+  "Components": [
+    {
+      "$type": "Posology.Directory.Medication.French.FrenchDrugComponent, Posology.Directory",
+      "InternalDrugIdentifier": "65143010",
+      "DrugShape": "comprim\ufffd",
+      "ComponentId": "00382",
+      "ComponentName": "L\ufffdVOTHYROXINE SODIQUE",
+      "ComponentAmount": "50 microgrammes",
+      "ComponentAmountUnit": "un comprim\ufffd",
+      "ComponentType": "SA"
+    }
+  ],
+  "Drug": {
+    "$type": "Posology.Directory.Medication.French.FrenchDrug, Posology.Directory",
+    "InternalIdentifier": "65143010",
+    "Denomination": "LEVOTHYROX 50 microgrammes, comprim\ufffd s\ufffdcable",
+    "AutorisationStatus": "Autorisation active",
+    "AdministrationType": "orale",
+    "DrugType": "comprim\ufffd s\ufffdcable",
+    "NoticeDocumentId": "0343373"
+  }
+}

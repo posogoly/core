@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
+        "projectName": "Posology.Directory.Tests",
+        "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/Posology.Directory.Tests.csproj",
+        "packagesPath": "/Users/halimakoundi/.nuget/packages/",
+        "outputPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/halimakoundi/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj": {
+                "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.7.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj",
+        "projectName": "Posology.Directory",
+        "projectPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/Posology.Directory.csproj",
+        "packagesPath": "/Users/halimakoundi/.nuget/packages/",
+        "outputPath": "/Users/halimakoundi/Documents/Github/core/posology/Posology.Directory/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/halimakoundi/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
