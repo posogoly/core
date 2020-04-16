@@ -10,16 +10,25 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: VSBuild@1
+- task: UseDotNet@2
   inputs:
-    solution: '*.sln'
-    clean: true
+    version: '3.0.x'
 
-- task: VSTest@2
+- task: UseDotNet@2
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    version: '2.2.x'
+    packageType: runtime
+
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration Release'
