@@ -28,14 +28,22 @@ steps:
     projects: '**/*.csproj'
     arguments: '--configuration Release'
 
-- task: DotNetCoreCLI@2
+#- task: DotNetCoreCLI@2
+#  inputs:
+#    command: 'test'
+#    projects: '**/*Tests*.csproj'
+
+- task: CopyFiles@2
   inputs:
-    command: 'test'
-    projects: '**/*Tests*.csproj'
+    SourceFolder: '$(Build.BinariesDirectory)/Functions/'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)'
+    OverWrite: true
+    flattenFolders: true
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)/Functions/bin/Release/netcoreapp3.1/bin'
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)/Functions.zip'
