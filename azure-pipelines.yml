@@ -38,6 +38,6 @@ steps:
     rootFolderOrFile: '$(Build.BinariesDirectory)/Functions/bin/Release/netcoreapp3.1/bin/'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/Functions.zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)/Functions.zip'
     replaceExistingArchive: true
 
