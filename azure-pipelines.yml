@@ -37,15 +37,15 @@ steps:
   inputs:
     SourceFolder: '$(Build.BinariesDirectory)\Functions\'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)\$(Build.BuildId)'
+    TargetFolder: '$(BinStagingFolder)\$(Build.BuildId)'
     OverWrite: true
     flattenFolders: true
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\$(Build.BuildId)'
+    rootFolderOrFile: '$(BinStagingFolder)\$(Build.BuildId)'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)\$(Build.BuildId)\Functions.zip'
+    archiveFile: '$(BinStagingFolder)\$(Build.BuildId)\Functions.zip'
     replaceExistingArchive: true
 
