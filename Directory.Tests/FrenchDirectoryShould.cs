@@ -37,7 +37,7 @@ namespace Directory.Tests
 
             var result = await directory.Search(barcode);
 
-            JsonSerializerSettings settings = new JsonSerializerSettings
+            var settings = new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Auto,
                 NullValueHandling = NullValueHandling.Ignore,
@@ -50,14 +50,7 @@ namespace Directory.Tests
             var fileContent = File.ReadAllText(filePath);
             var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
 
-            //todo move to equality function in data structure
-            VerifyPackage(actual, expectedResult);
-            VerifyDrugData(actual.Drug, expectedResult.Drug);
-            //todo move component to drug data structure
-            Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
-            var firstExpectedComponent = expectedResult.GetMainComponent();
-            var firstActualComponent = actual.GetMainComponent();
-            VerifyComponentData(firstActualComponent, firstExpectedComponent);
+            Assert.Equal(expectedResult, actual);
 
         }
 
