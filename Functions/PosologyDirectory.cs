@@ -16,7 +16,7 @@ namespace PosologyDirectory
     {
         [FunctionName("Directory")]
         public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "{countryCode}/directory/barcode/{code}")] HttpRequest req, string code,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "directory/{countryCode}/barcode/{code}")] HttpRequest req, string code,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");

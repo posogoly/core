@@ -10,12 +10,22 @@ namespace Directory.Tests
 {
     public class FrenchDirectoryShould : DirectoryShould
     {
+        private JsonSerializerSettings _settings;
         private const string Path = "../../../Data/french-directory/fic_cis_cip/";
+
+        public FrenchDirectoryShould()
+        {
+            _settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                NullValueHandling = NullValueHandling.Ignore,
+            };
+        }
 
         [Fact]
         public async void Return_DrugPackageBarcode()
         {
-            var barcode = "3400931923077";
+            const string barcode = "3400931923077";
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
             var directory = new FrenchDrugDirectory(rootFolder, Path);
 
@@ -36,19 +46,11 @@ namespace Directory.Tests
             var directory = new FrenchDrugDirectory(rootFolder, Path);
 
             var result = await directory.Search(barcode);
-
-            var settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Auto,
-                NullValueHandling = NullValueHandling.Ignore,
-            };
-
-            //todo refactor in narrative of scenario ATDD
-            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
+            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, _settings);
 
             var filePath = System.IO.Path.Combine(Path, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);
-            var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
+            var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, _settings);
 
             Assert.Equal(expectedResult, actual);
 

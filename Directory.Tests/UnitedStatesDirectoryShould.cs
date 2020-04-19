@@ -10,15 +10,19 @@ namespace Directory.Tests
 {
     public class UnitedStatesDirectoryShould : DirectoryShould
     {
+        private readonly JsonSerializerSettings _settings;
         private const string Path = "../../../Data/french-directory/fic_cis_cip/";
 
         public UnitedStatesDirectoryShould()
         {
+            _settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                NullValueHandling = NullValueHandling.Ignore,
+            };
         }
 
         [Theory]
-        [InlineData("3400935887559", "expected-result-3400935887559.json")]
-        [InlineData("3400930065686", "expected-result-3400930065686.json")]
         [InlineData("3400931923077", "expected-result-3400931923077.json")]
         public async void ReadAllFilesInFrenchDataFolder(string barcode, string expectedResultFile)
         {
@@ -31,23 +35,14 @@ namespace Directory.Tests
 
             Assert.Contains(barcode, result);
 
-            var settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Auto,
-                NullValueHandling = NullValueHandling.Ignore,
-            };
-            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, settings);
+            
+            var actual = JsonConvert.DeserializeObject<FrenchDrugPackaging>(result, _settings);
 
             var filePath = System.IO.Path.Combine(Path, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);
-            var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, settings);
+            var expectedResult = JsonConvert.DeserializeObject<FrenchDrugPackaging>(fileContent, _settings);
 
-            VerifyPackage(actual, expectedResult);
-            VerifyDrugData(actual.Drug, expectedResult.Drug);
-            Assert.Equal(expectedResult.Components.Count(), actual.Components.Count());
-            var firstExpectedComponent = expectedResult.GetMainComponent();
-            var firstActualComponent = actual.GetMainComponent();
-            VerifyComponentData(firstActualComponent, firstExpectedComponent);
+            Assert.Equal(expectedResult, actual);
 
         }
 
