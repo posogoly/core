@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Posology.Core;
 
 namespace Directory.Medication.French
@@ -49,6 +50,33 @@ namespace Directory.Medication.French
         public bool Remove(IDrugComponent item)
         {
             return _components.Remove((FrenchDrugComponent)item);
+        }
+
+        private bool Equals(FrenchDrugComponents other)
+        {
+            var isEqual = true;
+            _components.ForEach(thisComponent =>
+            {
+                var otherComponent = other.FirstOrDefault(comp => comp.ComponentId == thisComponent.ComponentId);
+                if (!thisComponent.Equals(otherComponent))
+                {
+                    isEqual = false;
+                };
+            });
+            return isEqual;
+            
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            return obj.GetType() == this.GetType() && Equals((FrenchDrugComponents) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (_components != null ? _components.GetHashCode() : 0);
         }
     }
 }

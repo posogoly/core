@@ -1,8 +1,8 @@
 using Posology.Core;
+using Posology.Directory;
 using Xunit;
-using System.Linq;
 
-namespace Posology.Directory.Tests
+namespace Directory.Tests
 {
     public class DirectoryShould
     {
@@ -20,7 +20,7 @@ namespace Posology.Directory.Tests
 
         internal static void VerifyDrugData(IDrug actual, IDrug expectedResult)
         {
-            Assert.Equal(expectedResult.Denomination, actual.Denomination);
+            Assert.Equal(expectedResult, actual);
             Assert.Equal(expectedResult.AdministrationType, actual.AdministrationType);
             Assert.Equal(expectedResult.AutorisationStatus, actual.AutorisationStatus);
             Assert.Equal(expectedResult.DrugType, actual.DrugType);
