@@ -40,7 +40,7 @@ steps:
   inputs:
     command: publish
     arguments: '--configuration Release --output functions_output'
-    projects: '**/Functions/*.csproj'
+    projects: 'Functions/*.csproj'
     publishWebProjects: false
     modifyOutputPath: false
     zipAfterPublish: false
