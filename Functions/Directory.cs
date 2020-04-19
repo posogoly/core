@@ -1,18 +1,18 @@
+using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Posology.Core;
-using System.Net.Http;
-using System.Net;
-using System.Text;
-using System.IO;
-using System.Reflection;
 
-namespace PosologyDirectory
+namespace Functions
 {
-    public static class PosologyDirectory
+    public static class Directory
     {
         [FunctionName("Directory")]
         public static async Task<HttpResponseMessage> Run(
@@ -29,7 +29,6 @@ namespace PosologyDirectory
 
             var directory = new FrenchDrugDirectory(rootDirectory, path);
 
-            //todo remive this string barCode = "3400935887559";
             //todo add to readme why the url is like that
             var result = await directory.Search(code);
 
