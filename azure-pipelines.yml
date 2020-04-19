@@ -40,5 +40,5 @@ steps:
     appName: 'posology-dev'
     #Uncomment the next lines to deploy to a deployment slot
     #deployToSlotOrASE: true
-    #resourceGroupName: '<Resource Group Name>'
+    resourceGroupName: 'posology-development'
     #slotName: '<Slot name>'
