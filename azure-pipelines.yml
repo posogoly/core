@@ -65,7 +65,7 @@ steps:
 
 - task: AzureFunctionApp@1
   inputs:
-    azureSubscription: '121351d1-abb6-410e-8c74-18acd30cc035'
+    azureSubscription: 'PosologyCore (121351d1-abb6-410e-8c74-18acd30cc035)'
     appType: functionApp
     appName: 'posology-dev'
     #Uncomment the next lines to deploy to a deployment slot
