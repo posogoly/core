@@ -51,6 +51,13 @@ steps:
     rootFolderOrFile: "$(System.DefaultWorkingDirectory)/functions_output"
     includeRootFolder: false
     archiveFile: "$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip"
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'Infrastructure/'
+    Contents: '**'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/Infrastructure'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip'
