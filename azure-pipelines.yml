@@ -31,14 +31,3 @@ steps:
     command: build
     projects: '**/*.csproj'
     arguments: '--configuration Release'
-
-steps:
-- task: AzureFunctionApp@1
-  inputs:
-    azureSubscription: 'PosologyCore'
-    appType: functionApp
-    appName: 'posology-dev'
-    #Uncomment the next lines to deploy to a deployment slot
-    #deployToSlotOrASE: true
-    resourceGroupName: 'posology-development'
-    #slotName: '<Slot name>'
