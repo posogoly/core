@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Directory\Directory.csproj" />
+    <ProjectReference Include="..\PosologyFunctions\PosologyFunctions.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Data\french-directory\fic_cis_cip\CIS.txt">
