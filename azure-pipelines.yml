@@ -62,14 +62,3 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'drop'
-
-- task: AzureFunctionApp@1
-  inputs:
-    azureSubscription: 'PosologyCore (121351d1-abb6-410e-8c74-18acd30cc035)'
-    appType: 'functionApp'
-    appName: 'Posology-dev'
-    deployToSlotOrASE: true
-    resourceGroupName: 'posology-development'
-    slotName: 'production'
-    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
