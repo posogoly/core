@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c97ec3-f3b5-48e6-81e5-2a06866bc326" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.posology/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.posology/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Tests/Directory.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Tests/Directory.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,24 +17,37 @@
     <session id="1456883602">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="6" />
-          <entry key="json" value="3" />
+          <entry key="cs" value="27" />
+          <entry key="json" value="6" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="6" />
-          <entry key="JSON" value="3" />
+          <entry key="C#" value="27" />
+          <entry key="JSON" value="6" />
           <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="275" />
+          <entry key="json" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="275" />
+          <entry key="JSON" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -39,43 +55,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1586941695995" expanded="false" signature="6:299" ph="..." />
-                <marker date="1586941695995" expanded="true" signature="328:1550" ph="{...}" />
-                <marker date="1586941695995" expanded="true" signature="372:1548" ph="{...}" />
-                <marker date="1586941695995" expanded="true" signature="649:1542" ph="{...}" />
-                <marker date="1586941695995" expanded="true" signature="1187:1297" ph="/* todo remive this string barCode = &quot;3400935887559&quot;; ... */" />
-                <marker date="1586941695995" expanded="true" signature="1428:1530" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="48">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding>
-                <marker date="1587052539266" expanded="false" signature="6:141" ph="..." />
-                <marker date="1587052539266" expanded="true" signature="177:2452" ph="{...}" />
-                <marker date="1587052539266" expanded="true" signature="236:2450" ph="{...}" />
-                <marker date="1587052539266" expanded="true" signature="395:704" ph="{...}" />
-                <marker date="1587052539266" expanded="true" signature="1059:2443" ph="{...}" />
-                <marker date="1587052539266" expanded="true" signature="1355:1490" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="6:101" ph="..." />
+                <marker date="1587552397225" expanded="true" signature="128:1950" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="187:1948" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="366:586" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="440:575" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="656:974" ph="{...}" />
+                <marker date="1587552397225" expanded="true" signature="1329:1941" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json">
+        <entry file="file://$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="129">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <marker date="1587552240209" expanded="true" signature="6:159" ph="..." />
+                <marker date="1587552240209" expanded="true" signature="180:4720" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="236:4718" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="400:542" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="600:1823" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="1072:1162" ph="/* todo add found package to cache ... */" />
+                <marker date="1587552240209" expanded="true" signature="1660:1798" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="1927:2800" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="2222:2744" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="2375:2697" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="2893:3696" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="3163:3686" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="3288:3630" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="3796:4711" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="4030:4701" ph="{...}" />
+                <marker date="1587552240209" expanded="true" signature="4185:4518" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-387">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding>
+                <marker date="1587552397231" expanded="true" signature="6:101" ph="..." />
+                <marker date="1587552397231" expanded="true" signature="128:1496" ph="{...}" />
+                <marker date="1587552397231" expanded="true" signature="193:1494" ph="{...}" />
+                <marker date="1587552397231" expanded="true" signature="387:607" ph="{...}" />
+                <marker date="1587552397231" expanded="true" signature="461:596" ph="{...}" />
+                <marker date="1587552397231" expanded="true" signature="801:1487" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,15 +119,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="592">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
-                <marker date="1587052539276" expanded="true" signature="6:65" ph="..." />
-                <marker date="1587052539276" expanded="true" signature="104:1320" ph="{...}" />
-                <marker date="1587052539276" expanded="true" signature="142:1318" ph="{...}" />
-                <marker date="1587052539276" expanded="true" signature="227:301" ph="{...}" />
-                <marker date="1587052539276" expanded="true" signature="1111:1192" ph="{...}" />
-                <marker date="1587052539276" expanded="true" signature="1242:1312" ph="{...}" />
+                <marker date="1587552209692" expanded="false" signature="6:44" ph="..." />
+                <marker date="1587552209692" expanded="true" signature="83:4156" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="121:4154" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="206:280" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="1090:1171" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="1221:1291" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="1338:2345" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="2394:2604" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="2647:4148" ph="{...}" />
+                <marker date="1587552209692" expanded="true" signature="2679:4138" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -100,12 +140,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="320">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
-                <marker date="1587052539263" expanded="true" signature="59:677" ph="{...}" />
-                <marker date="1587052539263" expanded="true" signature="113:675" ph="{...}" />
-                <marker date="1587052539263" expanded="true" signature="226:307" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="37:2417" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="91:2415" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="204:285" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="698:1248" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="1297:1521" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="1564:2409" ph="{...}" />
+                <marker date="1587552209693" expanded="true" signature="1596:2399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Directory.Tests/DirectoryShould.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1587552397227" expanded="true" signature="39:2084" ph="{...}" />
+                <marker date="1587552397227" expanded="true" signature="74:2082" ph="{...}" />
+                <marker date="1587552397227" expanded="true" signature="206:843" ph="{...}" />
+                <marker date="1587552397227" expanded="true" signature="924:1410" ph="{...}" />
+                <marker date="1587552397227" expanded="true" signature="1508:2076" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -114,20 +173,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="992">
+              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
               <folding>
-                <marker date="1587052539273" expanded="true" signature="6:80" ph="..." />
-                <marker date="1587052539273" expanded="true" signature="119:1357" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="177:1355" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="221:300" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="514:582" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="631:699" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="750:831" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="860:913" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="964:1052" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="1120:1214" ph="{...}" />
-                <marker date="1587052539273" expanded="true" signature="1263:1349" ph="{...}" />
+                <marker date="1587552209695" expanded="false" signature="6:78" ph="..." />
+                <marker date="1587552209695" expanded="true" signature="117:2242" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="175:2240" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="219:298" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="512:580" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="629:697" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="748:829" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="858:911" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="962:1050" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1118:1212" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1261:1347" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1404:1823" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1495:1770" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1682:1755" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="1872:2097" ph="{...}" />
+                <marker date="1587552209695" expanded="true" signature="2140:2234" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,40 +200,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="149">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
-                <marker date="1587052539269" expanded="true" signature="6:65" ph="..." />
-                <marker date="1587052539269" expanded="true" signature="104:1369" ph="{...}" />
-                <marker date="1587052539269" expanded="true" signature="159:1367" ph="{...}" />
-                <marker date="1587052539269" expanded="true" signature="288:353" ph="{...}" />
-                <marker date="1587052539269" expanded="true" signature="415:547" ph="{...}" />
-                <marker date="1587052539269" expanded="true" signature="1161:1242" ph="{...}" />
-                <marker date="1587052539269" expanded="true" signature="1292:1361" ph="{...}" />
+                <marker date="1587552227341" expanded="false" signature="6:44" ph="..." />
+                <marker date="1587552227341" expanded="true" signature="83:3385" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="138:3383" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="267:332" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="394:526" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="1140:1221" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="1271:1340" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="1396:2018" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="2067:2319" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="2362:3377" ph="{...}" />
+                <marker date="1587552227341" expanded="true" signature="2394:3367" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json">
+        <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="253">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+              <folding>
+                <marker date="1587553382155" expanded="true" signature="6:295" ph="..." />
+                <marker date="1587553382155" expanded="true" signature="324:1488" ph="{...}" />
+                <marker date="1587553382155" expanded="true" signature="368:1486" ph="{...}" />
+                <marker date="1587553382155" expanded="true" signature="652:1480" ph="{...}" />
+                <marker date="1587553382155" expanded="true" signature="1366:1468" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json">
+        <entry file="file://$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="144">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <marker date="1587552252247" expanded="true" signature="6:159" ph="..." />
+                <marker date="1587552252247" expanded="true" signature="180:4732" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="242:4730" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="412:554" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="612:1835" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="1084:1174" ph="/* todo add found package to cache ... */" />
+                <marker date="1587552252247" expanded="true" signature="1672:1810" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="1939:2812" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="2234:2756" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="2387:2709" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="2905:3708" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="3175:3698" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="3300:3642" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="3808:4723" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="4042:4713" ph="{...}" />
+                <marker date="1587552252247" expanded="true" signature="4197:4530" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,23 +273,48 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/IDrugDirectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/IDrugPackaging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/IDrugComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/IDrugComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/IDrug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory.Tests/DirectoryShould.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" />
+        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" />
         <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json" />
         <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json" />
         <option value="$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json" />
-        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs" />
-        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs" />
-        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" />
-        <option value="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs" />
+        <option value="$PROJECT_DIR$/Functions/PosologyDirectory.cs" />
+        <option value="$PROJECT_DIR$/Functions/Directory.cs" />
+        <option value="$PROJECT_DIR$/Directory/FileHelper.cs" />
+        <option value="$PROJECT_DIR$/Directory/IDrug.cs" />
+        <option value="$PROJECT_DIR$/Directory/IDrugComponent.cs" />
+        <option value="$PROJECT_DIR$/Directory/IDrugComponents.cs" />
+        <option value="$PROJECT_DIR$/Directory/IDrugDirectory.cs" />
+        <option value="$PROJECT_DIR$/Directory/IDrugPackaging.cs" />
+        <option value="$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs" />
+        <option value="$PROJECT_DIR$/Directory.Tests/DirectoryShould.cs" />
+        <option value="$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs" />
+        <option value="$PROJECT_DIR$/PosologyFunctions/FrenchDrugDirectory.cs" />
+        <option value="$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs" />
+        <option value="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" />
+        <option value="$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs" />
       </list>
     </option>
   </component>
@@ -218,9 +331,11 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollFromSource SolutionExplorer="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -242,21 +357,18 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Directory" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Medication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="French" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Directory.Tests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Directory.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="PosologyFunctions" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,12 +403,15 @@
       <workItem from="1587045808024" duration="205000" />
       <workItem from="1587046167891" duration="13000" />
       <workItem from="1587046209482" duration="631000" />
-      <workItem from="1587052311900" duration="707000" />
+      <workItem from="1587052311900" duration="3674000" />
+      <workItem from="1587315839285" duration="964000" />
+      <workItem from="1587319364755" duration="17000" />
+      <workItem from="1587319416560" duration="1015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1646000" />
+    <option name="totallyTimeSpent" value="6609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,9 +424,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,10 +439,10 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.3929078" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.49928468" visible="true" weight="0.17446809" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.17446809" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49928468" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -352,43 +466,17 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="48">
+          <url>file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs</url>
+          <line>64</line>
+          <properties documentPath="$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs" initialLine="55">
             <startOffsets>
-              <option value="1659" />
+              <option value="1785" />
             </startOffsets>
             <endOffsets>
-              <option value="1723" />
+              <option value="1800" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
-          <line>37</line>
-          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="37">
-            <startOffsets>
-              <option value="1223" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1268" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs</url>
-          <line>46</line>
-          <properties documentPath="$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs" initialLine="46">
-            <startOffsets>
-              <option value="1563" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1645" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -402,121 +490,306 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Functions/PosologyDirectory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1586941695995" expanded="false" signature="6:299" ph="..." />
-            <marker date="1586941695995" expanded="true" signature="328:1550" ph="{...}" />
-            <marker date="1586941695995" expanded="true" signature="372:1548" ph="{...}" />
-            <marker date="1586941695995" expanded="true" signature="649:1542" ph="{...}" />
-            <marker date="1586941695995" expanded="true" signature="1187:1297" ph="/* todo remive this string barCode = &quot;3400935887559&quot;; ... */" />
-            <marker date="1586941695995" expanded="true" signature="1428:1530" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json">
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        <state relative-caret-position="393">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400935887559.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="368">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs">
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400931923077.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="401">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/Directory.cs" />
+    <entry file="file://$PROJECT_DIR$/Functions/Directory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/FileHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
-            <marker date="1587052539266" expanded="false" signature="6:141" ph="..." />
-            <marker date="1587052539266" expanded="true" signature="177:2452" ph="{...}" />
-            <marker date="1587052539266" expanded="true" signature="236:2450" ph="{...}" />
-            <marker date="1587052539266" expanded="true" signature="395:704" ph="{...}" />
-            <marker date="1587052539266" expanded="true" signature="1059:2443" ph="{...}" />
-            <marker date="1587052539266" expanded="true" signature="1355:1490" ph="{...}" />
+            <marker date="1587552243025" expanded="false" signature="6:99" ph="..." />
+            <marker date="1587552243025" expanded="true" signature="120:1048" ph="{...}" />
+            <marker date="1587552243025" expanded="true" signature="150:1046" ph="{...}" />
+            <marker date="1587552243025" expanded="true" signature="452:1040" ph="{...}" />
+            <marker date="1587552243025" expanded="true" signature="793:993" ph="{...}" />
+            <marker date="1587552243025" expanded="true" signature="906:979" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Directory.Tests/Data/french-directory/fic_cis_cip/expected-result-3400930065686.json">
+    <entry file="file://$PROJECT_DIR$/Directory/IDrug.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="32">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1587552252260" expanded="true" signature="19:510" ph="{...}" />
+            <marker date="1587552252260" expanded="true" signature="48:508" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/IDrugComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <marker date="1587552252252" expanded="true" signature="19:383" ph="{...}" />
+            <marker date="1587552252252" expanded="true" signature="57:381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/IDrugComponents.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <marker date="1587552252239" expanded="true" signature="54:269" ph="{...}" />
+            <marker date="1587552252239" expanded="true" signature="123:267" ph="{...}" />
+            <marker date="1587552252239" expanded="true" signature="138:261" ph="/* todo change into composition rather than inheritance ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/IDrugDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <marker date="1587552252256" expanded="true" signature="50:147" ph="{...}" />
+            <marker date="1587552252256" expanded="true" signature="88:145" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/IDrugPackaging.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1587552252243" expanded="true" signature="19:552" ph="{...}" />
+            <marker date="1587552252243" expanded="true" signature="57:550" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/UnitedStatesDrugDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1587552252247" expanded="true" signature="6:159" ph="..." />
+            <marker date="1587552252247" expanded="true" signature="180:4732" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="242:4730" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="412:554" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="612:1835" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="1084:1174" ph="/* todo add found package to cache ... */" />
+            <marker date="1587552252247" expanded="true" signature="1672:1810" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="1939:2812" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="2234:2756" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="2387:2709" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="2905:3708" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="3175:3698" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="3300:3642" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="3808:4723" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="4042:4713" ph="{...}" />
+            <marker date="1587552252247" expanded="true" signature="4197:4530" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrug.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="592">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
-            <marker date="1587052539276" expanded="true" signature="6:65" ph="..." />
-            <marker date="1587052539276" expanded="true" signature="104:1320" ph="{...}" />
-            <marker date="1587052539276" expanded="true" signature="142:1318" ph="{...}" />
-            <marker date="1587052539276" expanded="true" signature="227:301" ph="{...}" />
-            <marker date="1587052539276" expanded="true" signature="1111:1192" ph="{...}" />
-            <marker date="1587052539276" expanded="true" signature="1242:1312" ph="{...}" />
+            <marker date="1587552209692" expanded="false" signature="6:44" ph="..." />
+            <marker date="1587552209692" expanded="true" signature="83:4156" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="121:4154" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="206:280" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="1090:1171" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="1221:1291" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="1338:2345" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="2394:2604" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="2647:4148" ph="{...}" />
+            <marker date="1587552209692" expanded="true" signature="2679:4138" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponent.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="320">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <marker date="1587052539263" expanded="true" signature="59:677" ph="{...}" />
-            <marker date="1587052539263" expanded="true" signature="113:675" ph="{...}" />
-            <marker date="1587052539263" expanded="true" signature="226:307" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="37:2417" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="91:2415" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="204:285" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="698:1248" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="1297:1521" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="1564:2409" ph="{...}" />
+            <marker date="1587552209693" expanded="true" signature="1596:2399" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugComponents.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="992">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
           <folding>
-            <marker date="1587052539273" expanded="true" signature="6:80" ph="..." />
-            <marker date="1587052539273" expanded="true" signature="119:1357" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="177:1355" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="221:300" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="514:582" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="631:699" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="750:831" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="860:913" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="964:1052" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="1120:1214" ph="{...}" />
-            <marker date="1587052539273" expanded="true" signature="1263:1349" ph="{...}" />
+            <marker date="1587552209695" expanded="false" signature="6:78" ph="..." />
+            <marker date="1587552209695" expanded="true" signature="117:2242" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="175:2240" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="219:298" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="512:580" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="629:697" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="748:829" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="858:911" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="962:1050" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1118:1212" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1261:1347" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1404:1823" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1495:1770" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1682:1755" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="1872:2097" ph="{...}" />
+            <marker date="1587552209695" expanded="true" signature="2140:2234" ph="{...}" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PosologyFunctions/host.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugPackaging.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="149">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
-            <marker date="1587052539269" expanded="true" signature="6:65" ph="..." />
-            <marker date="1587052539269" expanded="true" signature="104:1369" ph="{...}" />
-            <marker date="1587052539269" expanded="true" signature="159:1367" ph="{...}" />
-            <marker date="1587052539269" expanded="true" signature="288:353" ph="{...}" />
-            <marker date="1587052539269" expanded="true" signature="415:547" ph="{...}" />
-            <marker date="1587052539269" expanded="true" signature="1161:1242" ph="{...}" />
-            <marker date="1587052539269" expanded="true" signature="1292:1361" ph="{...}" />
+            <marker date="1587552227341" expanded="false" signature="6:44" ph="..." />
+            <marker date="1587552227341" expanded="true" signature="83:3385" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="138:3383" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="267:332" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="394:526" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="1140:1221" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="1271:1340" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="1396:2018" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="2067:2319" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="2362:3377" ph="{...}" />
+            <marker date="1587552227341" expanded="true" signature="2394:3367" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/DirectoryShould.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1587552397227" expanded="true" signature="39:2084" ph="{...}" />
+            <marker date="1587552397227" expanded="true" signature="74:2082" ph="{...}" />
+            <marker date="1587552397227" expanded="true" signature="206:843" ph="{...}" />
+            <marker date="1587552397227" expanded="true" signature="924:1410" ph="{...}" />
+            <marker date="1587552397227" expanded="true" signature="1508:2076" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <marker date="1587552397231" expanded="true" signature="6:101" ph="..." />
+            <marker date="1587552397231" expanded="true" signature="128:1496" ph="{...}" />
+            <marker date="1587552397231" expanded="true" signature="193:1494" ph="{...}" />
+            <marker date="1587552397231" expanded="true" signature="387:607" ph="{...}" />
+            <marker date="1587552397231" expanded="true" signature="461:596" ph="{...}" />
+            <marker date="1587552397231" expanded="true" signature="801:1487" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory/FrenchDrugDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1587552240209" expanded="true" signature="6:159" ph="..." />
+            <marker date="1587552240209" expanded="true" signature="180:4720" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="236:4718" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="400:542" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="600:1823" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="1072:1162" ph="/* todo add found package to cache ... */" />
+            <marker date="1587552240209" expanded="true" signature="1660:1798" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="1927:2800" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="2222:2744" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="2375:2697" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="2893:3696" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="3163:3686" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="3288:3630" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="3796:4711" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="4030:4701" ph="{...}" />
+            <marker date="1587552240209" expanded="true" signature="4185:4518" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Directory.Tests/FrenchDirectoryShould.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <marker date="1587552397225" expanded="true" signature="6:101" ph="..." />
+            <marker date="1587552397225" expanded="true" signature="128:1950" ph="{...}" />
+            <marker date="1587552397225" expanded="true" signature="187:1948" ph="{...}" />
+            <marker date="1587552397225" expanded="true" signature="366:586" ph="{...}" />
+            <marker date="1587552397225" expanded="true" signature="440:575" ph="{...}" />
+            <marker date="1587552397225" expanded="true" signature="656:974" ph="{...}" />
+            <marker date="1587552397225" expanded="true" signature="1329:1941" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <marker date="1587553382155" expanded="true" signature="6:295" ph="..." />
+            <marker date="1587553382155" expanded="true" signature="324:1488" ph="{...}" />
+            <marker date="1587553382155" expanded="true" signature="368:1486" ph="{...}" />
+            <marker date="1587553382155" expanded="true" signature="652:1480" ph="{...}" />
+            <marker date="1587553382155" expanded="true" signature="1366:1468" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

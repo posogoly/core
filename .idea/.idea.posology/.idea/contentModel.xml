@@ -66,7 +66,7 @@
         <e p="FrenchDirectoryShould.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+            <e p="netcoreapp3.1" t="Include">
               <e p="Directory.Tests.AssemblyInfo.cs" t="Include" />
               <e p="Directory.Tests.Program.cs" t="Include" />
             </e>
@@ -74,32 +74,28 @@
         </e>
         <e p="UnitedStatesDirectoryShould.cs" t="Include" />
       </e>
-      <e p="Functions" t="IncludeRecursive">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="posology.sln" t="IncludeFlat" />
+      <e p="PosologyFunctions" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Data" t="Include">
-          <e p="french-directory" t="Include">
-            <e p="fic_cis_cip" t="Include">
-              <e p="CIS.txt" t="Include" />
-              <e p="CIS_CIP.txt" t="Include" />
-              <e p="COMPO.txt" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="host.json" t="Include" />
         <e p="local.settings.json" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="PosologyDirectory.AssemblyInfo.cs" t="Include" />
+              <e p="PosologyFunctions.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="PosologyDirectory.cs" t="Include" />
-        <e p="PosologyDirectory.csproj" t="IncludeRecursive" />
+        <e p="PosologyFunctions.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="PublishProfiles" t="Include">
+            <e p="Posology-dev - Web Deploy.pubxml" t="Include" />
+          </e>
+        </e>
       </e>
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="posology.sln" t="IncludeFlat" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_posology.1959388338.00" t="ExcludeRecursive" />
