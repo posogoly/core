@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Posology.Core
+namespace Directory
 {
     public interface IDrugComponents : ICollection<IDrugComponent>
     {

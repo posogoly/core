@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Text;
+using System.Threading.Tasks;
 using Directory.Medication.French;
 using Newtonsoft.Json;
 
-namespace Posology.Core
+namespace Directory
 {
     public class UnitedStatesDrugDirectory : IDrugDirectory
     {

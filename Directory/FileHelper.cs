@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Posology.Core
+namespace Directory
 {
     public class FileHelper
     {

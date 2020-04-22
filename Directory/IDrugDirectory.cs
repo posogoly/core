@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Posology.Core
+namespace Directory
 {
     public interface IDrugDirectory
     {

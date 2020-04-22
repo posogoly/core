@@ -1,4 +1,4 @@
-﻿using Posology.Core;
+﻿using Directory;
 
 namespace Posology.Directory.Medication.UnitedStates
 {

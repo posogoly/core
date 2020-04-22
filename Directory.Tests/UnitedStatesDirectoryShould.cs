@@ -1,9 +1,7 @@
 using System;
 using System.IO;
-using System.Linq;
 using Directory.Medication.French;
 using Newtonsoft.Json;
-using Posology.Core;
 using Xunit;
 
 namespace Directory.Tests

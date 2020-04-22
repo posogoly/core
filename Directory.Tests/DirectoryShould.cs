@@ -1,5 +1,3 @@
-using Posology.Core;
-using Posology.Directory;
 using Xunit;
 
 namespace Directory.Tests

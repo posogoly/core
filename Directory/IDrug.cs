@@ -1,6 +1,4 @@
-﻿using Posology.Core;
-
-namespace Posology.Directory
+﻿namespace Directory
 {
     public interface IDrug
     {

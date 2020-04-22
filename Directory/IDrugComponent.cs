@@ -1,4 +1,4 @@
-﻿namespace Posology.Core
+﻿namespace Directory
 {
     public interface IDrugComponent
     {
