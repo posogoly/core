@@ -30,14 +30,14 @@ namespace Directory
             await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
             await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
-            //todo add found package to cache
+            //todo add found drug-package to cache
 
             //todo handling special characters (in UI?)
-            JsonSerializer serializer = new JsonSerializer();
+            /*var serializer = new JsonSerializer();
             serializer.Converters.Add(new Newtonsoft.Json.Converters.JavaScriptDateTimeConverter());
             serializer.NullValueHandling = NullValueHandling.Ignore;
             serializer.TypeNameHandling = TypeNameHandling.Auto;
-            serializer.Formatting = Formatting.Indented;
+            serializer.Formatting = Formatting.Indented;*/
                                            
             return JsonConvert.SerializeObject(drugPackage, new JsonSerializerSettings
             {
@@ -49,31 +49,27 @@ namespace Directory
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
-            var items = new List<IDrugPackaging>();
             var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
-            var row = fileContent.Where(line => line.Contains(barCode)).FirstOrDefault();
-            if (row != null)
-            {
-                var drugDetails = row.Split('\t');
+            var row = fileContent.FirstOrDefault(line => line.Contains(barCode));
+            if (row == null) throw new KeyNotFoundException();
+            var drugDetails = row.Split('\t');
 
-                var package = new FrenchDrugPackaging(drugDetails[0])
-                {
-                    Id = drugDetails[1],
-                    Description = drugDetails[2],
-                    Status = drugDetails[3],
-                    CommercialisationStatus = drugDetails[4],
-                    CommercialisationDate = drugDetails[5],
-                    Barcode = drugDetails[6]
-                };
-                return package;
-            }
-            throw new KeyNotFoundException();
+            var package = new FrenchDrugPackaging(drugDetails[0])
+            {
+                Id = drugDetails[1],
+                Description = drugDetails[2],
+                Status = drugDetails[3],
+                CommercialisationStatus = drugDetails[4],
+                CommercialisationDate = drugDetails[5],
+                Barcode = drugDetails[6]
+            };
+            return package;
         }
 
         private async Task AddDataFromDrugFile(string filePath, IDrugPackaging drugPackage)
         {
             var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
-            var row = fileContent.Where(line => line.Contains(drugPackage.InternalDrugIdentifier)).FirstOrDefault();
+            var row = fileContent.FirstOrDefault(line => line.Contains(drugPackage.InternalDrugIdentifier));
             if (row != null)
             {
                 var drugDetails = row.Split('\t');

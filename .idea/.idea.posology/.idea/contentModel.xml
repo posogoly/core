@@ -92,6 +92,7 @@
         <e p="PosologyFunctions.csproj" t="IncludeRecursive" />
         <e p="Properties" t="Include">
           <e p="PublishProfiles" t="Include">
+            <e p="posology-core-dev - Web Deploy.pubxml" t="Include" />
             <e p="Posology-dev - Web Deploy.pubxml" t="Include" />
           </e>
         </e>
