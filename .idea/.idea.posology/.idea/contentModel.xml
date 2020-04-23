@@ -24,6 +24,8 @@
         <e p="IDrugComponents.cs" t="Include" />
         <e p="IDrugDirectory.cs" t="Include" />
         <e p="IDrugPackaging.cs" t="Include" />
+        <e p="ILeaflet.cs" t="Include" />
+        <e p="Leaflet.cs" t="Include" />
         <e p="Medication" t="Include">
           <e p="French" t="Include">
             <e p="FrenchDrug.cs" t="Include" />
@@ -62,7 +64,6 @@
           </e>
         </e>
         <e p="Directory.Tests.csproj" t="IncludeRecursive" />
-        <e p="DirectoryShould.cs" t="Include" />
         <e p="FrenchDirectoryShould.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

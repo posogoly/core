@@ -11,6 +11,7 @@
         string Barcode { get; set; }
         string InternalDrugIdentifier { get; set; }
         IDrugComponents Components { get; set; }
+        ILeaflet Leaflet { get; set; }
 
         void AddComponent(IDrugComponent component);
         IDrugComponent GetMainComponent();

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Directory.Tests
 {
-    public class UnitedStatesDirectoryShould : DirectoryShould
+    public class UnitedStatesDirectoryShould
     {
         private readonly JsonSerializerSettings _settings;
         private const string Path = "../../../Data/french-directory/fic_cis_cip/";

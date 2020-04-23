@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Directory.Medication.French;
 using Newtonsoft.Json;
+using HtmlAgilityPack;
 
 namespace Directory
 {
@@ -30,6 +33,8 @@ namespace Directory
             await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
             await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
+            var leaflet = await GetSideEffectFor(drugPackage.Drug.NoticeDocumentId);
+            drugPackage.Leaflet = leaflet;
             //todo add found drug-package to cache
 
             //todo handling special characters (in UI?)
@@ -45,6 +50,34 @@ namespace Directory
                 NullValueHandling = NullValueHandling.Ignore,
             });
             
+        }
+
+        public async Task<Leaflet> GetSideEffectFor(string drugNoticeDocumentId)
+        {
+            var url = $"http://agence-prd.ansm.sante.fr/php/ecodex/notice/{drugNoticeDocumentId}.htm";
+            //todo load webpage
+            var client = new HttpClient();
+            var response = await client.GetAsync(url);
+            var pageContents = await response.Content.ReadAsStringAsync();
+            var doc = new HtmlDocument();
+            doc.LoadHtml(pageContents);
+            var body = doc.DocumentNode.SelectSingleNode("//body");
+            var paragraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bEffetsIndesirables")).ToArray();
+             
+            var sb = new StringBuilder();
+            
+            foreach (var item in paragraphNodes)
+            {
+                if (item.InnerText.Contains("AmmAnnexeTitre1"))
+                {
+                    break;
+                }
+                sb.AppendLine(item.InnerText);
+                Console.WriteLine(item.InnerText);
+            }
+            var sideEffects = sb.ToString(); 
+             
+            return new Leaflet(pageContents){SideEffects = sideEffects};
         }
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
@@ -111,4 +144,5 @@ namespace Directory
         }
 
     }
+
 }

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Directory.Tests
 {
-    public class FrenchDirectoryShould : DirectoryShould
+    public class FrenchDirectoryShould
     {
         private JsonSerializerSettings _settings;
         private const string Path = "../../../Data/french-directory/fic_cis_cip/";
@@ -19,7 +19,20 @@ namespace Directory.Tests
                 NullValueHandling = NullValueHandling.Ignore,
             };
         }
+        
+        [Fact]
+        public async void Return_Drug_Leaflet_information()
+        {
+            const string leafletId = "N0328975";
+            var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
+            var directory = new FrenchDrugDirectory(rootFolder, Path);
 
+            var result = await directory.GetSideEffectFor(leafletId);
+
+            Assert.Contains("EFFETS INDESIRABLES EVENTUELS", result.RawContent);
+
+        }
+        
         [Fact]
         public async void Return_DrugPackageBarcode()
         {
