@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Directory;
+using Directory.Medication.UnitedStates;
 
 namespace Posology.Directory.Medication.UnitedStates
 {
@@ -25,6 +26,7 @@ namespace Posology.Directory.Medication.UnitedStates
         public string CommercialisationDate { get; set; }
         public string Barcode { get; set; }
         public IDrugComponents Components { get => _components; set => _components = (USDrugComponents)value; }
+        public ILeaflet Leaflet { get; set; }
         public IDrug Drug { get => _drug; set => _drug = (USDrug)value; }
         
         public void AddComponent(IDrugComponent component)

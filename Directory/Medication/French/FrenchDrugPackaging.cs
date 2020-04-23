@@ -25,6 +25,7 @@ namespace Directory.Medication.French
         public string CommercialisationDate { get; set; }
         public string Barcode { get; set; }
         public IDrugComponents Components { get => _components; set => _components = (FrenchDrugComponents)value; }
+        public ILeaflet Leaflet { get; set; }
         public IDrug Drug { get => _drug; set => _drug = (FrenchDrug)value; }
         
         public void AddComponent(IDrugComponent component)

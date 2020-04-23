@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Directory;
+using Directory.Medication.UnitedStates;
 
 namespace Posology.Directory.Medication.UnitedStates
 {

@@ -1,6 +1,4 @@
-﻿using Directory;
-
-namespace Posology.Directory.Medication.UnitedStates
+﻿namespace Directory.Medication.UnitedStates
 {
     public class USDrugComponent:IDrugComponent
     {
