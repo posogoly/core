@@ -52,7 +52,7 @@ namespace Directory
             
         }
 
-        public async Task<Leaflet> GetSideEffectFor(string drugNoticeDocumentId)
+        public async Task<ILeaflet> GetSideEffectFor(string drugNoticeDocumentId)
         {
             var url = $"http://agence-prd.ansm.sante.fr/php/ecodex/notice/N{drugNoticeDocumentId}.htm";
             //todo load webpage
@@ -62,11 +62,49 @@ namespace Directory
             var doc = new HtmlDocument();
             doc.LoadHtml(pageContents);
             var body = doc.DocumentNode.SelectSingleNode("//body");
-            var paragraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bEffetsIndesirables")).ToArray();
+            var descriptionParagraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bQuestceque")).ToArray();
+            var descriptionsSb = new StringBuilder();
+            
+            foreach (var item in descriptionParagraphNodes)
+            {
+                if (item.InnerHtml.Contains("Ann3bInfoNecessaires"))
+                {
+                    break;
+                }
+                descriptionsSb.AppendLine(item.InnerText);
+                Console.WriteLine(item.InnerText);
+            }
+            var warningsParagraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bInfoNecessaires")).ToArray();
+            var warningsSb = new StringBuilder();
+            
+            foreach (var item in warningsParagraphNodes)
+            {
+                if (item.InnerHtml.Contains("Ann3bCommentPrendre"))
+                {
+                    break;
+                }
+                warningsSb.AppendLine(item.InnerText);
+                Console.WriteLine(item.InnerText);
+            }
+            
+            var posologyParagraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bCommentPrendre")).ToArray();
+            var posologySb = new StringBuilder();
+            
+            foreach (var item in posologyParagraphNodes)
+            {
+                if (item.InnerHtml.Contains("Ann3bEffetsIndesirables"))
+                {
+                    break;
+                }
+                posologySb.AppendLine(item.InnerText);
+                Console.WriteLine(item.InnerText);
+            }
+            
+            var sideEffectsParagraphNodes = body.SelectNodes("//p").SkipWhile(p => !p.InnerHtml.Contains("Ann3bEffetsIndesirables")).ToArray();
              
             var sb = new StringBuilder();
             
-            foreach (var item in paragraphNodes)
+            foreach (var item in sideEffectsParagraphNodes)
             {
                 if (item.InnerHtml.Contains("Ann3bConservation"))
                 {
@@ -77,7 +115,13 @@ namespace Directory
             }
             var sideEffects = sb.ToString(); 
              
-            return new Leaflet(pageContents){SideEffects = sideEffects};
+            return new Leaflet(pageContents)
+            {
+                SideEffects = sideEffects,
+                Information = warningsSb.ToString(),
+                Posology = posologySb.ToString(),
+                Description = descriptionsSb.ToString()
+            };
         }
 
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
