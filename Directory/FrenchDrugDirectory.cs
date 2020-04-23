@@ -54,7 +54,7 @@ namespace Directory
 
         public async Task<Leaflet> GetSideEffectFor(string drugNoticeDocumentId)
         {
-            var url = $"http://agence-prd.ansm.sante.fr/php/ecodex/notice/{drugNoticeDocumentId}.htm";
+            var url = $"http://agence-prd.ansm.sante.fr/php/ecodex/notice/N{drugNoticeDocumentId}.htm";
             //todo load webpage
             var client = new HttpClient();
             var response = await client.GetAsync(url);
@@ -68,7 +68,7 @@ namespace Directory
             
             foreach (var item in paragraphNodes)
             {
-                if (item.InnerText.Contains("AmmAnnexeTitre1"))
+                if (item.InnerHtml.Contains("Ann3bConservation"))
                 {
                     break;
                 }

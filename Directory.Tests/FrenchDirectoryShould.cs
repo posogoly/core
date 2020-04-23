@@ -23,7 +23,7 @@ namespace Directory.Tests
         [Fact]
         public async void Return_Drug_Leaflet_information()
         {
-            const string leafletId = "N0328975";
+            const string leafletId = "0328975";
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
             var directory = new FrenchDrugDirectory(rootFolder, Path);
 
