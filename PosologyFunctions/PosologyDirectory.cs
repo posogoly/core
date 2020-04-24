@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Net;
 using System.Text;
 using Directory;
+using Directory.Medication.French;
 
 namespace PosologyFunctions
 {

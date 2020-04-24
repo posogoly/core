@@ -25,6 +25,7 @@
         <e p="IDrugComponents.cs" t="Include" />
         <e p="IDrugDirectory.cs" t="Include" />
         <e p="IDrugPackaging.cs" t="Include" />
+        <e p="IDrugRepository.cs" t="Include" />
         <e p="ILeaflet.cs" t="Include" />
         <e p="Leaflet.cs" t="Include" />
         <e p="Medication" t="Include">
@@ -33,6 +34,7 @@
             <e p="FrenchDrugComponent.cs" t="Include" />
             <e p="FrenchDrugComponents.cs" t="Include" />
             <e p="FrenchDrugPackaging.cs" t="Include" />
+            <e p="FrenchDrugRepository.cs" t="Include" />
           </e>
           <e p="UnitedStates" t="Include">
             <e p="USDrug.cs" t="Include" />
