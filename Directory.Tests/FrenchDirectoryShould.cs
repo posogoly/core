@@ -20,16 +20,21 @@ namespace Directory.Tests
             };
         }
         
-        [Fact]
-        public async void Return_Drug_Leaflet_information()
+        [Theory]
+        [InlineData("0328975", "expected-leaflet-0328975.json")]
+        public async void Return_Drug_Leaflet_information(string leafletId, string expectedResultFile)
         {
-            const string leafletId = "0328975";
+            //const string leafletId = "0328975";
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
             var directory = new FrenchDrugDirectory(rootFolder, Path);
 
-            var result = await directory.GetSideEffectFor(leafletId);
+            var actualLeaflet = await directory.GetSideEffectFor(leafletId);
 
-            Assert.Contains("EFFETS INDESIRABLES EVENTUELS", result.RawContent);
+            var filePath = System.IO.Path.Combine(Path, expectedResultFile);
+            var fileContent = File.ReadAllText(filePath);
+            var expectedLeaflet = JsonConvert.DeserializeObject<Leaflet>(fileContent, _settings);
+            
+            Assert.Equal(expectedLeaflet, actualLeaflet);
 
         }
         

@@ -57,6 +57,7 @@
               <e p="CIS.txt" t="Include" />
               <e p="CIS_CIP.txt" t="Include" />
               <e p="COMPO.txt" t="Include" />
+              <e p="expected-leaflet-0328975.json" t="Include" />
               <e p="expected-result-3400930065686.json" t="Include" />
               <e p="expected-result-3400931923077.json" t="Include" />
               <e p="expected-result-3400935887559.json" t="Include" />
