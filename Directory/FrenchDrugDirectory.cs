@@ -14,12 +14,14 @@ namespace Directory
     {
         private readonly string _rootDirectory;
         private readonly string _path;
+        private FrenchLeafletRepository _leafletRepository;
 
-        public FrenchDrugDirectory(string rootDirectory, string path)
+        public FrenchDrugDirectory(string rootDirectory, string path, FrenchLeafletRepository leafletRepository)
         {
             _rootDirectory = rootDirectory;
             //todo inject FileHelper in constructor
             _path = path;
+            _leafletRepository = leafletRepository;
         }
 
         public async Task<string> Search(string barCode)
@@ -33,7 +35,7 @@ namespace Directory
             await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
             await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
 
-            var leaflet = await FrenchLeafletRepository.GetSideEffectFor(drugPackage.Drug.NoticeDocumentId);
+            var leaflet = await _leafletRepository.GetSideEffectFor(drugPackage.Drug.NoticeDocumentId);
             drugPackage.Leaflet = leaflet;
             //todo add found drug-package to cache
 

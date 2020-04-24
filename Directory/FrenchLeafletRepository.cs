@@ -7,16 +7,21 @@ using HtmlAgilityPack;
 
 namespace Directory
 {
-    public static class FrenchLeafletRepository
+    public class FrenchLeafletRepository
     {
-        private static readonly string BaseUrl= $"http://agence-prd.ansm.sante.fr/php/ecodex/";
+        private readonly string BaseUrl= $"http://agence-prd.ansm.sante.fr/php/ecodex/";
+        private readonly HttpClient _client;
 
-        public static async Task<ILeaflet> GetSideEffectFor(string drugNoticeDocumentId)
+        public FrenchLeafletRepository(HttpClient client)
+        {
+            _client = client;
+        }
+
+        public async Task<ILeaflet> GetSideEffectFor(string drugNoticeDocumentId)
         {
             var url = $"{BaseUrl}notice/N{drugNoticeDocumentId}.htm";
        
-            var client = new HttpClient();
-            var response = await client.GetAsync(url);
+            var response = await _client.GetAsync(url);
             var pageContents = await response.Content.ReadAsStringAsync();
             var doc = new HtmlDocument();
             doc.LoadHtml(pageContents);
