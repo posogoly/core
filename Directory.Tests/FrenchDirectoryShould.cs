@@ -28,7 +28,7 @@ namespace Directory.Tests
             var rootFolder = AppDomain.CurrentDomain.BaseDirectory;
             var directory = new FrenchDrugDirectory(rootFolder, Path);
 
-            var actualLeaflet = await directory.GetSideEffectFor(leafletId);
+            var actualLeaflet = await FrenchLeafletRepository.GetSideEffectFor(leafletId);
 
             var filePath = System.IO.Path.Combine(Path, expectedResultFile);
             var fileContent = File.ReadAllText(filePath);

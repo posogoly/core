@@ -19,6 +19,7 @@
         <e p="Directory.csproj" t="IncludeRecursive" />
         <e p="FileHelper.cs" t="Include" />
         <e p="FrenchDrugDirectory.cs" t="Include" />
+        <e p="FrenchLeafletRepository.cs" t="Include" />
         <e p="IDrug.cs" t="Include" />
         <e p="IDrugComponent.cs" t="Include" />
         <e p="IDrugComponents.cs" t="Include" />
