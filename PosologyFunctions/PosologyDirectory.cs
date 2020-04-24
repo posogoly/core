@@ -26,8 +26,8 @@ namespace PosologyFunctions
 
             var baseDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var rootDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
-
-            var directory = new FrenchDrugDirectory(rootDirectory, path, new FrenchLeafletRepository(new HttpClient()));
+            var frenchDrugRepository = new FrenchDrugRepository(rootDirectory, path);
+            var directory = new FrenchDrugDirectory(frenchDrugRepository, new FrenchLeafletRepository(new HttpClient()));
 
             //todo add to readme why the url is like that
             var result = await directory.Search(code);

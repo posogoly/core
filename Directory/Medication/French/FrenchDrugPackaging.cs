@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Newtonsoft.Json;
 using Posology.Directory;
 
 namespace Directory.Medication.French
@@ -56,6 +57,15 @@ namespace Directory.Medication.French
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
             return Equals((FrenchDrugPackaging) obj);
+        }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Objects,
+                NullValueHandling = NullValueHandling.Ignore,
+            });
         }
 
         public override int GetHashCode()

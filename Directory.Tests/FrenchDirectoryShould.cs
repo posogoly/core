@@ -25,8 +25,9 @@ namespace Directory.Tests
             //todo mock client and stub the response
             var httpClient = new HttpClient();;
             _frenchLeafletRepository = new FrenchLeafletRepository(httpClient);
-            
-            _directory = new FrenchDrugDirectory(_rootFolder, Path,_frenchLeafletRepository);
+
+            var frenchDrugRepository = new FrenchDrugRepository(_rootFolder, Path);
+            _directory = new FrenchDrugDirectory(frenchDrugRepository,_frenchLeafletRepository);
         }
         
         [Theory]

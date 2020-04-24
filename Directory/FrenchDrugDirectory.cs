@@ -1,59 +1,70 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Directory.Medication.French;
-using Newtonsoft.Json;
-using HtmlAgilityPack;
 
 namespace Directory
 {
     public class FrenchDrugDirectory : IDrugDirectory
     {
-        private readonly string _rootDirectory;
-        private readonly string _path;
-        private FrenchLeafletRepository _leafletRepository;
+        
+        private readonly FrenchDrugRepository _drugRepository;
+        private readonly FrenchLeafletRepository _leafletRepository;
 
-        public FrenchDrugDirectory(string rootDirectory, string path, FrenchLeafletRepository leafletRepository)
+        public FrenchDrugDirectory(FrenchDrugRepository drugRepository ,FrenchLeafletRepository leafletRepository)
         {
-            _rootDirectory = rootDirectory;
-            //todo inject FileHelper in constructor
-            _path = path;
+            _drugRepository = drugRepository;
             _leafletRepository = leafletRepository;
         }
 
         public async Task<string> Search(string barCode)
         {
             //todo move files into blobs in azure?
-            var drugHeaderDetails = "CIS.txt";
-            var drugInfoWithBarcodes = "CIS_CIP.txt";
-            var drugCompositions = "COMPO.txt";
 
-            var drugPackage = await GetDataFromPackageInfoFile(drugInfoWithBarcodes, barCode);
-            await AddDataFromDrugFile(drugHeaderDetails, drugPackage);
-            await AddDataFromDrugCompositionFile(drugCompositions, drugPackage);
+            var drugPackage = await _drugRepository.GetBy(barCode);
 
             var leaflet = await _leafletRepository.GetSideEffectFor(drugPackage.Drug.NoticeDocumentId);
             drugPackage.Leaflet = leaflet;
-            //todo add found drug-package to cache
 
             //todo handling special characters (in UI?)
-            /*var serializer = new JsonSerializer();
-            serializer.Converters.Add(new Newtonsoft.Json.Converters.JavaScriptDateTimeConverter());
-            serializer.NullValueHandling = NullValueHandling.Ignore;
-            serializer.TypeNameHandling = TypeNameHandling.Auto;
-            serializer.Formatting = Formatting.Indented;*/
-                                           
-            return JsonConvert.SerializeObject(drugPackage, new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Objects,
-                NullValueHandling = NullValueHandling.Ignore,
-            });
-            
+
+            return drugPackage.ToString();
+
         }
 
+
+
+    }
+
+    public class FrenchDrugRepository
+    {
+        private const string DrugHeaderDetails = "CIS.txt";
+        private const string DrugInfoWithBarcodes = "CIS_CIP.txt";
+        private const string DrugCompositions = "COMPO.txt";
+        private readonly string _rootDirectory;
+        private readonly string _path;
+
+        public FrenchDrugRepository(string rootDirectory, string path)
+        {
+            _rootDirectory = rootDirectory;
+            _path = path;
+        }
+
+        public async Task<IDrugPackaging> GetBy(string barCode)
+        {
+            //todo move files into blobs in azure?
+
+            var drugPackage = await GetDataFromPackageInfoFile(DrugInfoWithBarcodes, barCode);
+            await AddDataFromDrugFile(DrugHeaderDetails, drugPackage);
+            await AddDataFromDrugCompositionFile(DrugCompositions, drugPackage);
+
+            //todo add found drug-package to cache
+
+            return drugPackage;
+
+        }
+        
         private async Task<IDrugPackaging> GetDataFromPackageInfoFile(string filePath, string barCode)
         {
             var fileContent = await FileHelper.ReadAllLinesAsync(_rootDirectory, _path, filePath, Encoding.UTF8);
@@ -116,7 +127,5 @@ namespace Directory
                 package.Drug.AddComponent(component);
             }
         }
-
     }
-
 }
