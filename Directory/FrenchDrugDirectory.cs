@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Directory.Medication.French;
 
 namespace Directory
 {
@@ -21,8 +20,7 @@ namespace Directory
 
             var drugPackage = await _drugRepository.GetBy(barCode);
 
-            var leaflet = await _leafletRepository.GetSideEffectFor(drugPackage.Drug.NoticeDocumentId);
-            drugPackage.Leaflet = leaflet;
+            drugPackage.Leaflet = await _leafletRepository.GetSideEffectFor(drugPackage.GetLeafletId());
 
             //todo handling special characters (in UI?)
 

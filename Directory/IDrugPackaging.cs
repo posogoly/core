@@ -15,5 +15,6 @@
 
         void AddComponent(IDrugComponent component);
         IDrugComponent GetMainComponent();
+        string GetLeafletId();
     }
 }

@@ -38,5 +38,10 @@ namespace Posology.Directory.Medication.UnitedStates
         {
             return _components.FirstOrDefault();
         }
+        
+        public string GetLeafletId()
+        {
+            return this.Drug.NoticeDocumentId;
+        }
     }
 }

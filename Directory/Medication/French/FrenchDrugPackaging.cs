@@ -39,6 +39,11 @@ namespace Directory.Medication.French
             return _components.FirstOrDefault();
         }
 
+        public string GetLeafletId()
+        {
+            return this.Drug.NoticeDocumentId;
+        }
+        
         private bool Equals(FrenchDrugPackaging other)
         {
             return Equals(_drug, other._drug) && Equals(_components, other._components) && 
