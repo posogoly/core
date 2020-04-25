@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory", "Directory\Directory.csproj", "{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Tests", "Directory.Tests\Directory.Tests.csproj", "{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosologyFunctions", "PosologyFunctions\PosologyFunctions.csproj", "{7C338813-C412-445B-A433-351C4B3EE0A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C73A4D-275A-4C21-98FD-9CC8B33C185C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DFAFA7-8937-4970-BD36-C4B724CB2BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C338813-C412-445B-A433-351C4B3EE0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C338813-C412-445B-A433-351C4B3EE0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C338813-C412-445B-A433-351C4B3EE0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C338813-C412-445B-A433-351C4B3EE0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
