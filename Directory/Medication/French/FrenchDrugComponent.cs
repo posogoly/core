@@ -2,7 +2,6 @@
 {
     public class FrenchDrugComponent:IDrugComponent
     {
-        public FrenchDrugComponent() { }
         public FrenchDrugComponent(string internalDrugIdentifier)
         {
             InternalDrugIdentifier = internalDrugIdentifier;
@@ -34,19 +33,5 @@
             return obj.GetType() == this.GetType() && Equals((FrenchDrugComponent) obj);
         }
 
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                var hashCode = (InternalDrugIdentifier != null ? InternalDrugIdentifier.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (DrugShape != null ? DrugShape.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (ComponentId != null ? ComponentId.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (ComponentName != null ? ComponentName.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (ComponentAmount != null ? ComponentAmount.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (ComponentAmountUnit != null ? ComponentAmountUnit.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (ComponentType != null ? ComponentType.GetHashCode() : 0);
-                return hashCode;
-            }
-        }
     }
 }

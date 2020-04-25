@@ -73,21 +73,5 @@ namespace Directory.Medication.French
             });
         }
 
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                var hashCode = (_drug != null ? _drug.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (_components != null ? _components.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (InternalDrugIdentifier != null ? InternalDrugIdentifier.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (Description != null ? Description.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (Id != null ? Id.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (Status != null ? Status.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (CommercialisationStatus != null ? CommercialisationStatus.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (CommercialisationDate != null ? CommercialisationDate.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (Barcode != null ? Barcode.GetHashCode() : 0);
-                return hashCode;
-            }
-        }
     }
 }
