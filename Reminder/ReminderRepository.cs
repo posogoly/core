@@ -2,7 +2,7 @@
 {
     public class ReminderRepository: IReminderRepository
     {
-        public void Save()
+        public void Save(IMedicationReminder posology)
         {
             throw new System.NotImplementedException();
         }

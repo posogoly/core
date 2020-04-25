@@ -11,7 +11,7 @@
 
         public void SetReminder(IMedicationReminder posology)
         {
-            _reminderRepository.Save();
+            _reminderRepository.Save(posology);
         }
     }
 }

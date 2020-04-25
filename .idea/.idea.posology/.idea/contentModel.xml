@@ -135,7 +135,7 @@
           </e>
         </e>
         <e p="Reminder.Tests.csproj" t="IncludeRecursive" />
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="ReminderServiceShould.cs" t="Include" />
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
