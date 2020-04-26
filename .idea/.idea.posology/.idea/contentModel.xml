@@ -101,6 +101,7 @@
         </e>
         <e p="PosologyDirectory.cs" t="Include" />
         <e p="PosologyFunctions.csproj" t="IncludeRecursive" />
+        <e p="PosologyReminder.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="PublishProfiles" t="Include">
             <e p="posology-core-dev - Web Deploy.pubxml" t="Include" />
@@ -124,6 +125,18 @@
         <e p="Reminder.csproj" t="IncludeRecursive" />
         <e p="ReminderRepository.cs" t="Include" />
         <e p="ReminderService.cs" t="Include" />
+      </e>
+      <e p="Reminder.Integration.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Reminder.Integration.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Reminder.Integration.Tests.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="Reminder.Tests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

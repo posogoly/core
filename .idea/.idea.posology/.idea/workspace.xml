@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c97ec3-f3b5-48e6-81e5-2a06866bc326" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Reminder.Tests/Reminder.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Reminder.Tests/Reminder.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reminder.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reminder.Tests/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reminder/IReminderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reminder/IReminderRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reminder/ReminderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reminder/ReminderRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reminder/ReminderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reminder/ReminderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PosologyFunctions/PosologyReminder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reminder.Integration.Tests/Reminder.Integration.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reminder.Integration.Tests/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.posology/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.posology/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.posology/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posology.sln" beforeDir="false" afterPath="$PROJECT_DIR$/posology.sln" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,17 +19,17 @@
     <session id="1456883602">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="59" />
+          <entry key="cs" value="61" />
           <entry key="csproj" value="1" />
           <entry key="json" value="7" />
           <entry key="yml" value="1" />
@@ -36,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="59" />
+          <entry key="C#" value="61" />
           <entry key="Csproj" value="1" />
           <entry key="JSON" value="7" />
           <entry key="YAML" value="1" />
@@ -64,7 +65,6 @@
             <state relative-caret-position="224">
               <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <marker date="1587812762586" expanded="true" signature="18:420" ph="{...}" />
                 <marker date="1587812762586" expanded="true" signature="63:418" ph="{...}" />
                 <marker date="1587812762586" expanded="true" signature="207:281" ph="{...}" />
                 <marker date="1587812762586" expanded="true" signature="344:412" ph="{...}" />
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Reminder.Tests/UnitTest1.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Reminder.Tests/ReminderServiceShould.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="224">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <marker date="1587812762581" expanded="false" signature="6:23" ph="..." />
                 <marker date="1587812762581" expanded="true" signature="49:485" ph="{...}" />
@@ -94,7 +94,6 @@
             <state relative-caret-position="64">
               <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding>
-                <marker date="1587812762591" expanded="true" signature="18:222" ph="{...}" />
                 <marker date="1587812762591" expanded="true" signature="77:220" ph="{...}" />
                 <marker date="1587812762591" expanded="true" signature="138:214" ph="{...}" />
               </folding>
@@ -108,8 +107,39 @@
             <state relative-caret-position="64">
               <caret line="4" column="37" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="37" />
               <folding>
-                <marker date="1587812762588" expanded="true" signature="18:124" ph="{...}" />
                 <marker date="1587812762588" expanded="true" signature="61:122" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+              <folding>
+                <marker date="1587808983862" expanded="false" signature="6:330" ph="..." />
+                <marker date="1587808983862" expanded="true" signature="359:1656" ph="{...}" />
+                <marker date="1587808983862" expanded="true" signature="403:1654" ph="{...}" />
+                <marker date="1587808983862" expanded="true" signature="687:1648" ph="{...}" />
+                <marker date="1587808983862" expanded="true" signature="1534:1636" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyReminder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <marker date="1587815906423" expanded="false" signature="6:330" ph="..." />
+                <marker date="1587815906423" expanded="true" signature="359:1639" ph="{...}" />
+                <marker date="1587815906423" expanded="true" signature="402:1637" ph="{...}" />
+                <marker date="1587815906423" expanded="true" signature="670:1631" ph="{...}" />
+                <marker date="1587815906423" expanded="true" signature="1517:1619" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -150,7 +180,8 @@
     <setting file="file://$PROJECT_DIR$/Directory/IDrugRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/Medication/French/FrenchDrugRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory.Tests/UnitedStatesDirectoryShould.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Reminder.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PosologyFunctions/PosologyReminder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Reminder.Tests/ReminderServiceShould.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Directory/ILeaflet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reminder/IReminderRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -238,12 +269,7 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Reminder" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="posology" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Reminder.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="PosologyFunctions" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -293,12 +319,13 @@
       <workItem from="1587725290942" duration="243000" />
       <workItem from="1587725579956" duration="2337000" />
       <workItem from="1587742448856" duration="2141000" />
-      <workItem from="1587812642101" duration="121000" />
+      <workItem from="1587812642101" duration="554000" />
+      <workItem from="1587815918739" duration="257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25621000" />
+    <option name="totallyTimeSpent" value="26311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,9 +338,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23032904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -327,10 +353,10 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.49928468" visible="true" weight="0.4326241" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.49928468" weight="0.4326241" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.22695035" />
-      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4985694" visible="true" weight="0.22695035" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4985694" visible="true" weight="0.21985815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -502,20 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
-          <folding>
-            <marker date="1587808983862" expanded="false" signature="6:295" ph="..." />
-            <marker date="1587808983862" expanded="true" signature="359:1656" ph="{...}" />
-            <marker date="1587808983862" expanded="true" signature="403:1654" ph="{...}" />
-            <marker date="1587808983862" expanded="true" signature="687:1648" ph="{...}" />
-            <marker date="1587808983862" expanded="true" signature="1534:1636" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,13 +735,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reminder/IReminderRepository.cs">
+    <entry file="file://$PROJECT_DIR$/Reminder/ReminderService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="224">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <marker date="1587812762588" expanded="true" signature="18:124" ph="{...}" />
-            <marker date="1587812762588" expanded="true" signature="61:122" ph="{...}" />
+            <marker date="1587812762586" expanded="true" signature="63:418" ph="{...}" />
+            <marker date="1587812762586" expanded="true" signature="207:281" ph="{...}" />
+            <marker date="1587812762586" expanded="true" signature="344:412" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -739,35 +752,59 @@
         <state relative-caret-position="64">
           <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
           <folding>
-            <marker date="1587812762591" expanded="true" signature="18:222" ph="{...}" />
             <marker date="1587812762591" expanded="true" signature="77:220" ph="{...}" />
             <marker date="1587812762591" expanded="true" signature="138:214" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reminder/ReminderService.cs">
+    <entry file="file://$PROJECT_DIR$/Reminder/IReminderRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="64">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <marker date="1587812762586" expanded="true" signature="18:420" ph="{...}" />
-            <marker date="1587812762586" expanded="true" signature="63:418" ph="{...}" />
-            <marker date="1587812762586" expanded="true" signature="207:281" ph="{...}" />
-            <marker date="1587812762586" expanded="true" signature="344:412" ph="{...}" />
+            <marker date="1587812762588" expanded="true" signature="61:122" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reminder.Tests/UnitTest1.cs">
+    <entry file="file://$PROJECT_DIR$/Reminder.Tests/ReminderServiceShould.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="224">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <marker date="1587812762581" expanded="false" signature="6:23" ph="..." />
             <marker date="1587812762581" expanded="true" signature="49:485" ph="{...}" />
             <marker date="1587812762581" expanded="true" signature="90:483" ph="{...}" />
             <marker date="1587812762581" expanded="true" signature="161:477" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyDirectory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+          <folding>
+            <marker date="1587808983862" expanded="false" signature="6:330" ph="..." />
+            <marker date="1587808983862" expanded="true" signature="359:1656" ph="{...}" />
+            <marker date="1587808983862" expanded="true" signature="403:1654" ph="{...}" />
+            <marker date="1587808983862" expanded="true" signature="687:1648" ph="{...}" />
+            <marker date="1587808983862" expanded="true" signature="1534:1636" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PosologyFunctions/PosologyReminder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <marker date="1587815906423" expanded="false" signature="6:330" ph="..." />
+            <marker date="1587815906423" expanded="true" signature="359:1639" ph="{...}" />
+            <marker date="1587815906423" expanded="true" signature="402:1637" ph="{...}" />
+            <marker date="1587815906423" expanded="true" signature="670:1631" ph="{...}" />
+            <marker date="1587815906423" expanded="true" signature="1517:1619" ph="{...}" />
           </folding>
         </state>
       </provider>
